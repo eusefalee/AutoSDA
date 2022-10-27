@@ -1,0 +1,10 @@
+
+.idea/*
+Postprocessing/.ipynb_checkpoints
+Preprocessing/.ipynb_checkpoints
+BuildingElasticModels/*
+__pycache__/*
+BuildingNonlinearModels/*
+BuildingData/Archive1/*
+BuildingData/Archive2/*
+BuildingData/Archive3/*

@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "./Codes/DesignTool",
+        "./Codes/ModelingTool",
+        "./Codes/PostProcessing"
+    ]
+}
