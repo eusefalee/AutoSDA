@@ -10,6 +10,8 @@ import subprocess
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+from pathlib import Path
+
 import scipy
 import shutil
 import os
@@ -1079,6 +1081,7 @@ class ElasticAnalysis(ELF,AccParam):
 
 
     def run_OpenSees(self):
+        from main_design import baseDirectory
         self.define_EarthquakeLaterLoads()
         self.define_Eigen_analysis()
         self.define_GravityDeadLoads()
@@ -1096,14 +1099,16 @@ class ElasticAnalysis(ELF,AccParam):
         self.define_nodes()
         self.define_records()
         self.define_variables()
-        subprocess.call(['OpenSees.exe', 'Model.tcl'])
+        # path = Path(baseDirectory,"..","..","OpenSees","bin","OpenSees")
+        # os.system(baseDirectory + ' OpenSees Model.tcl')
+        subprocess.call([Path('..','..','OpenSees','bin','OpenSees'), 'Model.tcl'])
 
 
     def drift_demand(self):
         self.Sxe_list = []
         for i in range (0, self.num_story):
             #myfile = open("EarthquakeLoad\\NodeDisplacements\\NodeDisplacementLevel%s.out" %(i+2), "r") #Use this for RSA
-            myfile = open("GravityEarthquake\\NodeDisplacements\\NodeDisplacementLevel%s.out" %(i+2), "r")#Use this for ELF
+            myfile = open(Path("GravityEarthquake","NodeDisplacements","NodeDisplacementLevel%s.out" %(i+2)), "r") #Use this for ELF
             lst = list(myfile.readlines())
             myfile.close()
             lastline = lst[len(lst)-1]

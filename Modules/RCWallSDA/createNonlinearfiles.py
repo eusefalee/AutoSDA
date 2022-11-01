@@ -6,14 +6,16 @@ Last edit: Oct 22 2022
 
 """
 
+from genericpath import exists
 import numpy as np
 import pandas as pd
 import os
 from NLRHA_tclfiles import *
+from pathlib import Path
 
 def createNLRHAfiles(inputfile,designfile):
     original_folder = os.getcwd()
-    nonlinear_folder = original_folder + "\\Nonlinear analysis"
+    nonlinear_folder = Path(original_folder,"Nonlinear analysis")
     
     # Obtain number of ground motions
     os.chdir(nonlinear_folder)
@@ -128,8 +130,8 @@ def createNLRHAfiles(inputfile,designfile):
         
         
         #Create and open corresponsing folder
-        building_folder = nonlinear_folder + '\\Building_'+str(building_ID[n])
-        os.mkdir(building_folder)
+        building_folder = Path(nonlinear_folder,'building_'+str(building_ID[n]))
+        os.makedirs(building_folder, exist_ok = True)
         os.chdir(building_folder)
         
         building_nonlinear.run_OpenSees()

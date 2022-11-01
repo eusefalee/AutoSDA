@@ -144,7 +144,7 @@ def designWall14(inputfile):
             # Check story drifts
             storyDrifts = []
             for i in range (0, building.num_story):
-                myfile = open("GravityEarthquake\\StoryDrifts\\Story%s.out" %(i+1), "r") #ELF
+                myfile = open(Path("GravityEarthquake","StoryDrifts","Story%s.out" %(i+1)), "r") #ELF
                 #myfile = open("EarthquakeLoad\\StoryDrifts\\Story%s.out" %(i+1), "r") #RSA
                 lst = list(myfile.readlines())
                 myfile.close()
@@ -350,7 +350,7 @@ def designWall19(inputfile):
             # Check story drifts
             storyDrifts = []
             for i in range (0, building.num_story):
-                myfile = open("GravityEarthquake\\StoryDrifts\\Story%s.out" %(i+1), "r") #ELF
+                myfile = open(Path("GravityEarthquake","StoryDrifts","Story%s.out" %(i+1)), "r") #ELF
                 #myfile = open("EarthquakeLoad\\StoryDrifts\\Story%s.out" %(i+1), "r") #RSA
                 lst = list(myfile.readlines())
                 myfile.close()
