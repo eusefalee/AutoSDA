@@ -1,0 +1,438 @@
+# This file will be used to define column hinge material models
+
+
+# Story1Pier1
+set	ColumnHingeMaterialStory1Pier1Tag	60001;
+set	ColumnHingeMaterialStory1Pier1K0	6839166.6667;
+set	ColumnHingeMaterialStory1Pier1As	0.0065;
+set	ColumnHingeMaterialStory1Pier1My	44908.5878;
+set	ColumnHingeMaterialStory1Pier1Lambda	87.4744;
+set	ColumnHingeMaterialStory1Pier1ThetaP	0.1987;
+set	ColumnHingeMaterialStory1Pier1ThetaPc	1.5045;
+set	ColumnHingeMaterialStory1Pier1Residual	0.4635;
+set	ColumnHingeMaterialStory1Pier1ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory1Pier1Tag	$ColumnHingeMaterialStory1Pier1K0	$n	$ColumnHingeMaterialStory1Pier1As	$ColumnHingeMaterialStory1Pier1My	$ColumnHingeMaterialStory1Pier1Lambda	$ColumnHingeMaterialStory1Pier1ThetaP	$ColumnHingeMaterialStory1Pier1ThetaPc	$ColumnHingeMaterialStory1Pier1Residual	$ColumnHingeMaterialStory1Pier1ThetaU;
+
+# Story1Pier2
+set	ColumnHingeMaterialStory1Pier2Tag	60002;
+set	ColumnHingeMaterialStory1Pier2K0	9747222.2222;
+set	ColumnHingeMaterialStory1Pier2As	0.0000;
+set	ColumnHingeMaterialStory1Pier2My	47431.2602;
+set	ColumnHingeMaterialStory1Pier2Lambda	21.5960;
+set	ColumnHingeMaterialStory1Pier2ThetaP	0.1104;
+set	ColumnHingeMaterialStory1Pier2ThetaPc	0.8159;
+set	ColumnHingeMaterialStory1Pier2Residual	0.4822;
+set	ColumnHingeMaterialStory1Pier2ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory1Pier2Tag	$ColumnHingeMaterialStory1Pier2K0	$n	$ColumnHingeMaterialStory1Pier2As	$ColumnHingeMaterialStory1Pier2My	$ColumnHingeMaterialStory1Pier2Lambda	$ColumnHingeMaterialStory1Pier2ThetaP	$ColumnHingeMaterialStory1Pier2ThetaPc	$ColumnHingeMaterialStory1Pier2Residual	$ColumnHingeMaterialStory1Pier2ThetaU;
+
+# Story1Pier3
+set	ColumnHingeMaterialStory1Pier3Tag	60003;
+set	ColumnHingeMaterialStory1Pier3K0	9747222.2222;
+set	ColumnHingeMaterialStory1Pier3As	0.0000;
+set	ColumnHingeMaterialStory1Pier3My	47432.7472;
+set	ColumnHingeMaterialStory1Pier3Lambda	21.6028;
+set	ColumnHingeMaterialStory1Pier3ThetaP	0.1104;
+set	ColumnHingeMaterialStory1Pier3ThetaPc	0.8160;
+set	ColumnHingeMaterialStory1Pier3Residual	0.4822;
+set	ColumnHingeMaterialStory1Pier3ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory1Pier3Tag	$ColumnHingeMaterialStory1Pier3K0	$n	$ColumnHingeMaterialStory1Pier3As	$ColumnHingeMaterialStory1Pier3My	$ColumnHingeMaterialStory1Pier3Lambda	$ColumnHingeMaterialStory1Pier3ThetaP	$ColumnHingeMaterialStory1Pier3ThetaPc	$ColumnHingeMaterialStory1Pier3Residual	$ColumnHingeMaterialStory1Pier3ThetaU;
+
+# Story1Pier4
+set	ColumnHingeMaterialStory1Pier4Tag	60004;
+set	ColumnHingeMaterialStory1Pier4K0	9747222.2222;
+set	ColumnHingeMaterialStory1Pier4As	0.0000;
+set	ColumnHingeMaterialStory1Pier4My	47433.0691;
+set	ColumnHingeMaterialStory1Pier4Lambda	21.6043;
+set	ColumnHingeMaterialStory1Pier4ThetaP	0.1104;
+set	ColumnHingeMaterialStory1Pier4ThetaPc	0.8161;
+set	ColumnHingeMaterialStory1Pier4Residual	0.4822;
+set	ColumnHingeMaterialStory1Pier4ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory1Pier4Tag	$ColumnHingeMaterialStory1Pier4K0	$n	$ColumnHingeMaterialStory1Pier4As	$ColumnHingeMaterialStory1Pier4My	$ColumnHingeMaterialStory1Pier4Lambda	$ColumnHingeMaterialStory1Pier4ThetaP	$ColumnHingeMaterialStory1Pier4ThetaPc	$ColumnHingeMaterialStory1Pier4Residual	$ColumnHingeMaterialStory1Pier4ThetaU;
+
+# Story1Pier5
+set	ColumnHingeMaterialStory1Pier5Tag	60005;
+set	ColumnHingeMaterialStory1Pier5K0	9747222.2222;
+set	ColumnHingeMaterialStory1Pier5As	0.0000;
+set	ColumnHingeMaterialStory1Pier5My	47433.0634;
+set	ColumnHingeMaterialStory1Pier5Lambda	21.6043;
+set	ColumnHingeMaterialStory1Pier5ThetaP	0.1104;
+set	ColumnHingeMaterialStory1Pier5ThetaPc	0.8161;
+set	ColumnHingeMaterialStory1Pier5Residual	0.4822;
+set	ColumnHingeMaterialStory1Pier5ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory1Pier5Tag	$ColumnHingeMaterialStory1Pier5K0	$n	$ColumnHingeMaterialStory1Pier5As	$ColumnHingeMaterialStory1Pier5My	$ColumnHingeMaterialStory1Pier5Lambda	$ColumnHingeMaterialStory1Pier5ThetaP	$ColumnHingeMaterialStory1Pier5ThetaPc	$ColumnHingeMaterialStory1Pier5Residual	$ColumnHingeMaterialStory1Pier5ThetaU;
+
+# Story1Pier6
+set	ColumnHingeMaterialStory1Pier6Tag	60006;
+set	ColumnHingeMaterialStory1Pier6K0	9747222.2222;
+set	ColumnHingeMaterialStory1Pier6As	0.0000;
+set	ColumnHingeMaterialStory1Pier6My	47433.0691;
+set	ColumnHingeMaterialStory1Pier6Lambda	21.6043;
+set	ColumnHingeMaterialStory1Pier6ThetaP	0.1104;
+set	ColumnHingeMaterialStory1Pier6ThetaPc	0.8161;
+set	ColumnHingeMaterialStory1Pier6Residual	0.4822;
+set	ColumnHingeMaterialStory1Pier6ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory1Pier6Tag	$ColumnHingeMaterialStory1Pier6K0	$n	$ColumnHingeMaterialStory1Pier6As	$ColumnHingeMaterialStory1Pier6My	$ColumnHingeMaterialStory1Pier6Lambda	$ColumnHingeMaterialStory1Pier6ThetaP	$ColumnHingeMaterialStory1Pier6ThetaPc	$ColumnHingeMaterialStory1Pier6Residual	$ColumnHingeMaterialStory1Pier6ThetaU;
+
+# Story1Pier7
+set	ColumnHingeMaterialStory1Pier7Tag	60007;
+set	ColumnHingeMaterialStory1Pier7K0	9747222.2222;
+set	ColumnHingeMaterialStory1Pier7As	0.0000;
+set	ColumnHingeMaterialStory1Pier7My	47432.7472;
+set	ColumnHingeMaterialStory1Pier7Lambda	21.6028;
+set	ColumnHingeMaterialStory1Pier7ThetaP	0.1104;
+set	ColumnHingeMaterialStory1Pier7ThetaPc	0.8160;
+set	ColumnHingeMaterialStory1Pier7Residual	0.4822;
+set	ColumnHingeMaterialStory1Pier7ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory1Pier7Tag	$ColumnHingeMaterialStory1Pier7K0	$n	$ColumnHingeMaterialStory1Pier7As	$ColumnHingeMaterialStory1Pier7My	$ColumnHingeMaterialStory1Pier7Lambda	$ColumnHingeMaterialStory1Pier7ThetaP	$ColumnHingeMaterialStory1Pier7ThetaPc	$ColumnHingeMaterialStory1Pier7Residual	$ColumnHingeMaterialStory1Pier7ThetaU;
+
+# Story1Pier8
+set	ColumnHingeMaterialStory1Pier8Tag	60008;
+set	ColumnHingeMaterialStory1Pier8K0	9747222.2222;
+set	ColumnHingeMaterialStory1Pier8As	0.0000;
+set	ColumnHingeMaterialStory1Pier8My	47431.2602;
+set	ColumnHingeMaterialStory1Pier8Lambda	21.5960;
+set	ColumnHingeMaterialStory1Pier8ThetaP	0.1104;
+set	ColumnHingeMaterialStory1Pier8ThetaPc	0.8159;
+set	ColumnHingeMaterialStory1Pier8Residual	0.4822;
+set	ColumnHingeMaterialStory1Pier8ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory1Pier8Tag	$ColumnHingeMaterialStory1Pier8K0	$n	$ColumnHingeMaterialStory1Pier8As	$ColumnHingeMaterialStory1Pier8My	$ColumnHingeMaterialStory1Pier8Lambda	$ColumnHingeMaterialStory1Pier8ThetaP	$ColumnHingeMaterialStory1Pier8ThetaPc	$ColumnHingeMaterialStory1Pier8Residual	$ColumnHingeMaterialStory1Pier8ThetaU;
+
+# Story1Pier9
+set	ColumnHingeMaterialStory1Pier9Tag	60009;
+set	ColumnHingeMaterialStory1Pier9K0	6839166.6667;
+set	ColumnHingeMaterialStory1Pier9As	0.0065;
+set	ColumnHingeMaterialStory1Pier9My	44908.5878;
+set	ColumnHingeMaterialStory1Pier9Lambda	87.4744;
+set	ColumnHingeMaterialStory1Pier9ThetaP	0.1987;
+set	ColumnHingeMaterialStory1Pier9ThetaPc	1.5045;
+set	ColumnHingeMaterialStory1Pier9Residual	0.4635;
+set	ColumnHingeMaterialStory1Pier9ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory1Pier9Tag	$ColumnHingeMaterialStory1Pier9K0	$n	$ColumnHingeMaterialStory1Pier9As	$ColumnHingeMaterialStory1Pier9My	$ColumnHingeMaterialStory1Pier9Lambda	$ColumnHingeMaterialStory1Pier9ThetaP	$ColumnHingeMaterialStory1Pier9ThetaPc	$ColumnHingeMaterialStory1Pier9Residual	$ColumnHingeMaterialStory1Pier9ThetaU;
+
+# Story2Pier1
+set	ColumnHingeMaterialStory2Pier1Tag	60010;
+set	ColumnHingeMaterialStory2Pier1K0	7694062.5000;
+set	ColumnHingeMaterialStory2Pier1As	0.0081;
+set	ColumnHingeMaterialStory2Pier1My	45578.1526;
+set	ColumnHingeMaterialStory2Pier1Lambda	108.3636;
+set	ColumnHingeMaterialStory2Pier1ThetaP	0.1984;
+set	ColumnHingeMaterialStory2Pier1ThetaPc	1.7839;
+set	ColumnHingeMaterialStory2Pier1Residual	0.4748;
+set	ColumnHingeMaterialStory2Pier1ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory2Pier1Tag	$ColumnHingeMaterialStory2Pier1K0	$n	$ColumnHingeMaterialStory2Pier1As	$ColumnHingeMaterialStory2Pier1My	$ColumnHingeMaterialStory2Pier1Lambda	$ColumnHingeMaterialStory2Pier1ThetaP	$ColumnHingeMaterialStory2Pier1ThetaPc	$ColumnHingeMaterialStory2Pier1Residual	$ColumnHingeMaterialStory2Pier1ThetaU;
+
+# Story2Pier2
+set	ColumnHingeMaterialStory2Pier2Tag	60011;
+set	ColumnHingeMaterialStory2Pier2K0	10965625.0000;
+set	ColumnHingeMaterialStory2Pier2As	0.0010;
+set	ColumnHingeMaterialStory2Pier2My	47722.1385;
+set	ColumnHingeMaterialStory2Pier2Lambda	24.4420;
+set	ColumnHingeMaterialStory2Pier2ThetaP	0.1222;
+set	ColumnHingeMaterialStory2Pier2ThetaPc	0.9239;
+set	ColumnHingeMaterialStory2Pier2Residual	0.4870;
+set	ColumnHingeMaterialStory2Pier2ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory2Pier2Tag	$ColumnHingeMaterialStory2Pier2K0	$n	$ColumnHingeMaterialStory2Pier2As	$ColumnHingeMaterialStory2Pier2My	$ColumnHingeMaterialStory2Pier2Lambda	$ColumnHingeMaterialStory2Pier2ThetaP	$ColumnHingeMaterialStory2Pier2ThetaPc	$ColumnHingeMaterialStory2Pier2Residual	$ColumnHingeMaterialStory2Pier2ThetaU;
+
+# Story2Pier3
+set	ColumnHingeMaterialStory2Pier3Tag	60012;
+set	ColumnHingeMaterialStory2Pier3K0	10965625.0000;
+set	ColumnHingeMaterialStory2Pier3As	0.0010;
+set	ColumnHingeMaterialStory2Pier3My	47722.3874;
+set	ColumnHingeMaterialStory2Pier3Lambda	24.4433;
+set	ColumnHingeMaterialStory2Pier3ThetaP	0.1222;
+set	ColumnHingeMaterialStory2Pier3ThetaPc	0.9239;
+set	ColumnHingeMaterialStory2Pier3Residual	0.4870;
+set	ColumnHingeMaterialStory2Pier3ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory2Pier3Tag	$ColumnHingeMaterialStory2Pier3K0	$n	$ColumnHingeMaterialStory2Pier3As	$ColumnHingeMaterialStory2Pier3My	$ColumnHingeMaterialStory2Pier3Lambda	$ColumnHingeMaterialStory2Pier3ThetaP	$ColumnHingeMaterialStory2Pier3ThetaPc	$ColumnHingeMaterialStory2Pier3Residual	$ColumnHingeMaterialStory2Pier3ThetaU;
+
+# Story2Pier4
+set	ColumnHingeMaterialStory2Pier4Tag	60013;
+set	ColumnHingeMaterialStory2Pier4K0	10965625.0000;
+set	ColumnHingeMaterialStory2Pier4As	0.0010;
+set	ColumnHingeMaterialStory2Pier4My	47722.7265;
+set	ColumnHingeMaterialStory2Pier4Lambda	24.4450;
+set	ColumnHingeMaterialStory2Pier4ThetaP	0.1222;
+set	ColumnHingeMaterialStory2Pier4ThetaPc	0.9239;
+set	ColumnHingeMaterialStory2Pier4Residual	0.4870;
+set	ColumnHingeMaterialStory2Pier4ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory2Pier4Tag	$ColumnHingeMaterialStory2Pier4K0	$n	$ColumnHingeMaterialStory2Pier4As	$ColumnHingeMaterialStory2Pier4My	$ColumnHingeMaterialStory2Pier4Lambda	$ColumnHingeMaterialStory2Pier4ThetaP	$ColumnHingeMaterialStory2Pier4ThetaPc	$ColumnHingeMaterialStory2Pier4Residual	$ColumnHingeMaterialStory2Pier4ThetaU;
+
+# Story2Pier5
+set	ColumnHingeMaterialStory2Pier5Tag	60014;
+set	ColumnHingeMaterialStory2Pier5K0	10965625.0000;
+set	ColumnHingeMaterialStory2Pier5As	0.0010;
+set	ColumnHingeMaterialStory2Pier5My	47722.7159;
+set	ColumnHingeMaterialStory2Pier5Lambda	24.4449;
+set	ColumnHingeMaterialStory2Pier5ThetaP	0.1222;
+set	ColumnHingeMaterialStory2Pier5ThetaPc	0.9239;
+set	ColumnHingeMaterialStory2Pier5Residual	0.4870;
+set	ColumnHingeMaterialStory2Pier5ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory2Pier5Tag	$ColumnHingeMaterialStory2Pier5K0	$n	$ColumnHingeMaterialStory2Pier5As	$ColumnHingeMaterialStory2Pier5My	$ColumnHingeMaterialStory2Pier5Lambda	$ColumnHingeMaterialStory2Pier5ThetaP	$ColumnHingeMaterialStory2Pier5ThetaPc	$ColumnHingeMaterialStory2Pier5Residual	$ColumnHingeMaterialStory2Pier5ThetaU;
+
+# Story2Pier6
+set	ColumnHingeMaterialStory2Pier6Tag	60015;
+set	ColumnHingeMaterialStory2Pier6K0	10965625.0000;
+set	ColumnHingeMaterialStory2Pier6As	0.0010;
+set	ColumnHingeMaterialStory2Pier6My	47722.7265;
+set	ColumnHingeMaterialStory2Pier6Lambda	24.4450;
+set	ColumnHingeMaterialStory2Pier6ThetaP	0.1222;
+set	ColumnHingeMaterialStory2Pier6ThetaPc	0.9239;
+set	ColumnHingeMaterialStory2Pier6Residual	0.4870;
+set	ColumnHingeMaterialStory2Pier6ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory2Pier6Tag	$ColumnHingeMaterialStory2Pier6K0	$n	$ColumnHingeMaterialStory2Pier6As	$ColumnHingeMaterialStory2Pier6My	$ColumnHingeMaterialStory2Pier6Lambda	$ColumnHingeMaterialStory2Pier6ThetaP	$ColumnHingeMaterialStory2Pier6ThetaPc	$ColumnHingeMaterialStory2Pier6Residual	$ColumnHingeMaterialStory2Pier6ThetaU;
+
+# Story2Pier7
+set	ColumnHingeMaterialStory2Pier7Tag	60016;
+set	ColumnHingeMaterialStory2Pier7K0	10965625.0000;
+set	ColumnHingeMaterialStory2Pier7As	0.0010;
+set	ColumnHingeMaterialStory2Pier7My	47722.3874;
+set	ColumnHingeMaterialStory2Pier7Lambda	24.4433;
+set	ColumnHingeMaterialStory2Pier7ThetaP	0.1222;
+set	ColumnHingeMaterialStory2Pier7ThetaPc	0.9239;
+set	ColumnHingeMaterialStory2Pier7Residual	0.4870;
+set	ColumnHingeMaterialStory2Pier7ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory2Pier7Tag	$ColumnHingeMaterialStory2Pier7K0	$n	$ColumnHingeMaterialStory2Pier7As	$ColumnHingeMaterialStory2Pier7My	$ColumnHingeMaterialStory2Pier7Lambda	$ColumnHingeMaterialStory2Pier7ThetaP	$ColumnHingeMaterialStory2Pier7ThetaPc	$ColumnHingeMaterialStory2Pier7Residual	$ColumnHingeMaterialStory2Pier7ThetaU;
+
+# Story2Pier8
+set	ColumnHingeMaterialStory2Pier8Tag	60017;
+set	ColumnHingeMaterialStory2Pier8K0	10965625.0000;
+set	ColumnHingeMaterialStory2Pier8As	0.0010;
+set	ColumnHingeMaterialStory2Pier8My	47722.1385;
+set	ColumnHingeMaterialStory2Pier8Lambda	24.4420;
+set	ColumnHingeMaterialStory2Pier8ThetaP	0.1222;
+set	ColumnHingeMaterialStory2Pier8ThetaPc	0.9239;
+set	ColumnHingeMaterialStory2Pier8Residual	0.4870;
+set	ColumnHingeMaterialStory2Pier8ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory2Pier8Tag	$ColumnHingeMaterialStory2Pier8K0	$n	$ColumnHingeMaterialStory2Pier8As	$ColumnHingeMaterialStory2Pier8My	$ColumnHingeMaterialStory2Pier8Lambda	$ColumnHingeMaterialStory2Pier8ThetaP	$ColumnHingeMaterialStory2Pier8ThetaPc	$ColumnHingeMaterialStory2Pier8Residual	$ColumnHingeMaterialStory2Pier8ThetaU;
+
+# Story2Pier9
+set	ColumnHingeMaterialStory2Pier9Tag	60018;
+set	ColumnHingeMaterialStory2Pier9K0	7694062.5000;
+set	ColumnHingeMaterialStory2Pier9As	0.0081;
+set	ColumnHingeMaterialStory2Pier9My	45578.1526;
+set	ColumnHingeMaterialStory2Pier9Lambda	108.3636;
+set	ColumnHingeMaterialStory2Pier9ThetaP	0.1984;
+set	ColumnHingeMaterialStory2Pier9ThetaPc	1.7839;
+set	ColumnHingeMaterialStory2Pier9Residual	0.4748;
+set	ColumnHingeMaterialStory2Pier9ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory2Pier9Tag	$ColumnHingeMaterialStory2Pier9K0	$n	$ColumnHingeMaterialStory2Pier9As	$ColumnHingeMaterialStory2Pier9My	$ColumnHingeMaterialStory2Pier9Lambda	$ColumnHingeMaterialStory2Pier9ThetaP	$ColumnHingeMaterialStory2Pier9ThetaPc	$ColumnHingeMaterialStory2Pier9Residual	$ColumnHingeMaterialStory2Pier9ThetaU;
+
+# Story3Pier1
+set	ColumnHingeMaterialStory3Pier1Tag	60019;
+set	ColumnHingeMaterialStory3Pier1K0	4150625.0000;
+set	ColumnHingeMaterialStory3Pier1As	0.0044;
+set	ColumnHingeMaterialStory3Pier1My	25698.3188;
+set	ColumnHingeMaterialStory3Pier1Lambda	40.1804;
+set	ColumnHingeMaterialStory3Pier1ThetaP	0.1991;
+set	ColumnHingeMaterialStory3Pier1ThetaPc	1.2080;
+set	ColumnHingeMaterialStory3Pier1Residual	0.4776;
+set	ColumnHingeMaterialStory3Pier1ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory3Pier1Tag	$ColumnHingeMaterialStory3Pier1K0	$n	$ColumnHingeMaterialStory3Pier1As	$ColumnHingeMaterialStory3Pier1My	$ColumnHingeMaterialStory3Pier1Lambda	$ColumnHingeMaterialStory3Pier1ThetaP	$ColumnHingeMaterialStory3Pier1ThetaPc	$ColumnHingeMaterialStory3Pier1Residual	$ColumnHingeMaterialStory3Pier1ThetaU;
+
+# Story3Pier2
+set	ColumnHingeMaterialStory3Pier2Tag	60020;
+set	ColumnHingeMaterialStory3Pier2K0	5229062.5000;
+set	ColumnHingeMaterialStory3Pier2As	0.0000;
+set	ColumnHingeMaterialStory3Pier2My	27216.9946;
+set	ColumnHingeMaterialStory3Pier2Lambda	21.3757;
+set	ColumnHingeMaterialStory3Pier2ThetaP	0.1055;
+set	ColumnHingeMaterialStory3Pier2ThetaPc	0.8154;
+set	ColumnHingeMaterialStory3Pier2Residual	0.4877;
+set	ColumnHingeMaterialStory3Pier2ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory3Pier2Tag	$ColumnHingeMaterialStory3Pier2K0	$n	$ColumnHingeMaterialStory3Pier2As	$ColumnHingeMaterialStory3Pier2My	$ColumnHingeMaterialStory3Pier2Lambda	$ColumnHingeMaterialStory3Pier2ThetaP	$ColumnHingeMaterialStory3Pier2ThetaPc	$ColumnHingeMaterialStory3Pier2Residual	$ColumnHingeMaterialStory3Pier2ThetaU;
+
+# Story3Pier3
+set	ColumnHingeMaterialStory3Pier3Tag	60021;
+set	ColumnHingeMaterialStory3Pier3K0	5229062.5000;
+set	ColumnHingeMaterialStory3Pier3As	0.0000;
+set	ColumnHingeMaterialStory3Pier3My	27217.9861;
+set	ColumnHingeMaterialStory3Pier3Lambda	21.3835;
+set	ColumnHingeMaterialStory3Pier3ThetaP	0.1056;
+set	ColumnHingeMaterialStory3Pier3ThetaPc	0.8156;
+set	ColumnHingeMaterialStory3Pier3Residual	0.4878;
+set	ColumnHingeMaterialStory3Pier3ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory3Pier3Tag	$ColumnHingeMaterialStory3Pier3K0	$n	$ColumnHingeMaterialStory3Pier3As	$ColumnHingeMaterialStory3Pier3My	$ColumnHingeMaterialStory3Pier3Lambda	$ColumnHingeMaterialStory3Pier3ThetaP	$ColumnHingeMaterialStory3Pier3ThetaPc	$ColumnHingeMaterialStory3Pier3Residual	$ColumnHingeMaterialStory3Pier3ThetaU;
+
+# Story3Pier4
+set	ColumnHingeMaterialStory3Pier4Tag	60022;
+set	ColumnHingeMaterialStory3Pier4K0	5229062.5000;
+set	ColumnHingeMaterialStory3Pier4As	0.0000;
+set	ColumnHingeMaterialStory3Pier4My	27218.1053;
+set	ColumnHingeMaterialStory3Pier4Lambda	21.3844;
+set	ColumnHingeMaterialStory3Pier4ThetaP	0.1056;
+set	ColumnHingeMaterialStory3Pier4ThetaPc	0.8156;
+set	ColumnHingeMaterialStory3Pier4Residual	0.4878;
+set	ColumnHingeMaterialStory3Pier4ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory3Pier4Tag	$ColumnHingeMaterialStory3Pier4K0	$n	$ColumnHingeMaterialStory3Pier4As	$ColumnHingeMaterialStory3Pier4My	$ColumnHingeMaterialStory3Pier4Lambda	$ColumnHingeMaterialStory3Pier4ThetaP	$ColumnHingeMaterialStory3Pier4ThetaPc	$ColumnHingeMaterialStory3Pier4Residual	$ColumnHingeMaterialStory3Pier4ThetaU;
+
+# Story3Pier5
+set	ColumnHingeMaterialStory3Pier5Tag	60023;
+set	ColumnHingeMaterialStory3Pier5K0	5229062.5000;
+set	ColumnHingeMaterialStory3Pier5As	0.0000;
+set	ColumnHingeMaterialStory3Pier5My	27218.1040;
+set	ColumnHingeMaterialStory3Pier5Lambda	21.3844;
+set	ColumnHingeMaterialStory3Pier5ThetaP	0.1056;
+set	ColumnHingeMaterialStory3Pier5ThetaPc	0.8156;
+set	ColumnHingeMaterialStory3Pier5Residual	0.4878;
+set	ColumnHingeMaterialStory3Pier5ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory3Pier5Tag	$ColumnHingeMaterialStory3Pier5K0	$n	$ColumnHingeMaterialStory3Pier5As	$ColumnHingeMaterialStory3Pier5My	$ColumnHingeMaterialStory3Pier5Lambda	$ColumnHingeMaterialStory3Pier5ThetaP	$ColumnHingeMaterialStory3Pier5ThetaPc	$ColumnHingeMaterialStory3Pier5Residual	$ColumnHingeMaterialStory3Pier5ThetaU;
+
+# Story3Pier6
+set	ColumnHingeMaterialStory3Pier6Tag	60024;
+set	ColumnHingeMaterialStory3Pier6K0	5229062.5000;
+set	ColumnHingeMaterialStory3Pier6As	0.0000;
+set	ColumnHingeMaterialStory3Pier6My	27218.1053;
+set	ColumnHingeMaterialStory3Pier6Lambda	21.3844;
+set	ColumnHingeMaterialStory3Pier6ThetaP	0.1056;
+set	ColumnHingeMaterialStory3Pier6ThetaPc	0.8156;
+set	ColumnHingeMaterialStory3Pier6Residual	0.4878;
+set	ColumnHingeMaterialStory3Pier6ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory3Pier6Tag	$ColumnHingeMaterialStory3Pier6K0	$n	$ColumnHingeMaterialStory3Pier6As	$ColumnHingeMaterialStory3Pier6My	$ColumnHingeMaterialStory3Pier6Lambda	$ColumnHingeMaterialStory3Pier6ThetaP	$ColumnHingeMaterialStory3Pier6ThetaPc	$ColumnHingeMaterialStory3Pier6Residual	$ColumnHingeMaterialStory3Pier6ThetaU;
+
+# Story3Pier7
+set	ColumnHingeMaterialStory3Pier7Tag	60025;
+set	ColumnHingeMaterialStory3Pier7K0	5229062.5000;
+set	ColumnHingeMaterialStory3Pier7As	0.0000;
+set	ColumnHingeMaterialStory3Pier7My	27217.9861;
+set	ColumnHingeMaterialStory3Pier7Lambda	21.3835;
+set	ColumnHingeMaterialStory3Pier7ThetaP	0.1056;
+set	ColumnHingeMaterialStory3Pier7ThetaPc	0.8156;
+set	ColumnHingeMaterialStory3Pier7Residual	0.4878;
+set	ColumnHingeMaterialStory3Pier7ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory3Pier7Tag	$ColumnHingeMaterialStory3Pier7K0	$n	$ColumnHingeMaterialStory3Pier7As	$ColumnHingeMaterialStory3Pier7My	$ColumnHingeMaterialStory3Pier7Lambda	$ColumnHingeMaterialStory3Pier7ThetaP	$ColumnHingeMaterialStory3Pier7ThetaPc	$ColumnHingeMaterialStory3Pier7Residual	$ColumnHingeMaterialStory3Pier7ThetaU;
+
+# Story3Pier8
+set	ColumnHingeMaterialStory3Pier8Tag	60026;
+set	ColumnHingeMaterialStory3Pier8K0	5229062.5000;
+set	ColumnHingeMaterialStory3Pier8As	0.0000;
+set	ColumnHingeMaterialStory3Pier8My	27216.9946;
+set	ColumnHingeMaterialStory3Pier8Lambda	21.3757;
+set	ColumnHingeMaterialStory3Pier8ThetaP	0.1055;
+set	ColumnHingeMaterialStory3Pier8ThetaPc	0.8154;
+set	ColumnHingeMaterialStory3Pier8Residual	0.4877;
+set	ColumnHingeMaterialStory3Pier8ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory3Pier8Tag	$ColumnHingeMaterialStory3Pier8K0	$n	$ColumnHingeMaterialStory3Pier8As	$ColumnHingeMaterialStory3Pier8My	$ColumnHingeMaterialStory3Pier8Lambda	$ColumnHingeMaterialStory3Pier8ThetaP	$ColumnHingeMaterialStory3Pier8ThetaPc	$ColumnHingeMaterialStory3Pier8Residual	$ColumnHingeMaterialStory3Pier8ThetaU;
+
+# Story3Pier9
+set	ColumnHingeMaterialStory3Pier9Tag	60027;
+set	ColumnHingeMaterialStory3Pier9K0	4150625.0000;
+set	ColumnHingeMaterialStory3Pier9As	0.0044;
+set	ColumnHingeMaterialStory3Pier9My	25698.3188;
+set	ColumnHingeMaterialStory3Pier9Lambda	40.1804;
+set	ColumnHingeMaterialStory3Pier9ThetaP	0.1991;
+set	ColumnHingeMaterialStory3Pier9ThetaPc	1.2080;
+set	ColumnHingeMaterialStory3Pier9Residual	0.4776;
+set	ColumnHingeMaterialStory3Pier9ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory3Pier9Tag	$ColumnHingeMaterialStory3Pier9K0	$n	$ColumnHingeMaterialStory3Pier9As	$ColumnHingeMaterialStory3Pier9My	$ColumnHingeMaterialStory3Pier9Lambda	$ColumnHingeMaterialStory3Pier9ThetaP	$ColumnHingeMaterialStory3Pier9ThetaPc	$ColumnHingeMaterialStory3Pier9Residual	$ColumnHingeMaterialStory3Pier9ThetaU;
+
+# Story4Pier1
+set	ColumnHingeMaterialStory4Pier1Tag	60028;
+set	ColumnHingeMaterialStory4Pier1K0	4150625.0000;
+set	ColumnHingeMaterialStory4Pier1As	0.0050;
+set	ColumnHingeMaterialStory4Pier1My	26141.3058;
+set	ColumnHingeMaterialStory4Pier1Lambda	47.7034;
+set	ColumnHingeMaterialStory4Pier1ThetaP	0.1990;
+set	ColumnHingeMaterialStory4Pier1ThetaPc	1.3176;
+set	ColumnHingeMaterialStory4Pier1Residual	0.4910;
+set	ColumnHingeMaterialStory4Pier1ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory4Pier1Tag	$ColumnHingeMaterialStory4Pier1K0	$n	$ColumnHingeMaterialStory4Pier1As	$ColumnHingeMaterialStory4Pier1My	$ColumnHingeMaterialStory4Pier1Lambda	$ColumnHingeMaterialStory4Pier1ThetaP	$ColumnHingeMaterialStory4Pier1ThetaPc	$ColumnHingeMaterialStory4Pier1Residual	$ColumnHingeMaterialStory4Pier1ThetaU;
+
+# Story4Pier2
+set	ColumnHingeMaterialStory4Pier2Tag	60029;
+set	ColumnHingeMaterialStory4Pier2K0	5229062.5000;
+set	ColumnHingeMaterialStory4Pier2As	0.0000;
+set	ColumnHingeMaterialStory4Pier2My	27439.1849;
+set	ColumnHingeMaterialStory4Pier2Lambda	23.1776;
+set	ColumnHingeMaterialStory4Pier2ThetaP	0.1084;
+set	ColumnHingeMaterialStory4Pier2ThetaPc	0.8495;
+set	ColumnHingeMaterialStory4Pier2Residual	0.4942;
+set	ColumnHingeMaterialStory4Pier2ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory4Pier2Tag	$ColumnHingeMaterialStory4Pier2K0	$n	$ColumnHingeMaterialStory4Pier2As	$ColumnHingeMaterialStory4Pier2My	$ColumnHingeMaterialStory4Pier2Lambda	$ColumnHingeMaterialStory4Pier2ThetaP	$ColumnHingeMaterialStory4Pier2ThetaPc	$ColumnHingeMaterialStory4Pier2Residual	$ColumnHingeMaterialStory4Pier2ThetaU;
+
+# Story4Pier3
+set	ColumnHingeMaterialStory4Pier3Tag	60030;
+set	ColumnHingeMaterialStory4Pier3K0	5229062.5000;
+set	ColumnHingeMaterialStory4Pier3As	0.0000;
+set	ColumnHingeMaterialStory4Pier3My	27453.0390;
+set	ColumnHingeMaterialStory4Pier3Lambda	23.2938;
+set	ColumnHingeMaterialStory4Pier3ThetaP	0.1085;
+set	ColumnHingeMaterialStory4Pier3ThetaPc	0.8516;
+set	ColumnHingeMaterialStory4Pier3Residual	0.4946;
+set	ColumnHingeMaterialStory4Pier3ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory4Pier3Tag	$ColumnHingeMaterialStory4Pier3K0	$n	$ColumnHingeMaterialStory4Pier3As	$ColumnHingeMaterialStory4Pier3My	$ColumnHingeMaterialStory4Pier3Lambda	$ColumnHingeMaterialStory4Pier3ThetaP	$ColumnHingeMaterialStory4Pier3ThetaPc	$ColumnHingeMaterialStory4Pier3Residual	$ColumnHingeMaterialStory4Pier3ThetaU;
+
+# Story4Pier4
+set	ColumnHingeMaterialStory4Pier4Tag	60031;
+set	ColumnHingeMaterialStory4Pier4K0	5229062.5000;
+set	ColumnHingeMaterialStory4Pier4As	0.0000;
+set	ColumnHingeMaterialStory4Pier4My	27453.0049;
+set	ColumnHingeMaterialStory4Pier4Lambda	23.2935;
+set	ColumnHingeMaterialStory4Pier4ThetaP	0.1085;
+set	ColumnHingeMaterialStory4Pier4ThetaPc	0.8516;
+set	ColumnHingeMaterialStory4Pier4Residual	0.4946;
+set	ColumnHingeMaterialStory4Pier4ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory4Pier4Tag	$ColumnHingeMaterialStory4Pier4K0	$n	$ColumnHingeMaterialStory4Pier4As	$ColumnHingeMaterialStory4Pier4My	$ColumnHingeMaterialStory4Pier4Lambda	$ColumnHingeMaterialStory4Pier4ThetaP	$ColumnHingeMaterialStory4Pier4ThetaPc	$ColumnHingeMaterialStory4Pier4Residual	$ColumnHingeMaterialStory4Pier4ThetaU;
+
+# Story4Pier5
+set	ColumnHingeMaterialStory4Pier5Tag	60032;
+set	ColumnHingeMaterialStory4Pier5K0	5229062.5000;
+set	ColumnHingeMaterialStory4Pier5As	0.0000;
+set	ColumnHingeMaterialStory4Pier5My	27453.0303;
+set	ColumnHingeMaterialStory4Pier5Lambda	23.2937;
+set	ColumnHingeMaterialStory4Pier5ThetaP	0.1085;
+set	ColumnHingeMaterialStory4Pier5ThetaPc	0.8516;
+set	ColumnHingeMaterialStory4Pier5Residual	0.4946;
+set	ColumnHingeMaterialStory4Pier5ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory4Pier5Tag	$ColumnHingeMaterialStory4Pier5K0	$n	$ColumnHingeMaterialStory4Pier5As	$ColumnHingeMaterialStory4Pier5My	$ColumnHingeMaterialStory4Pier5Lambda	$ColumnHingeMaterialStory4Pier5ThetaP	$ColumnHingeMaterialStory4Pier5ThetaPc	$ColumnHingeMaterialStory4Pier5Residual	$ColumnHingeMaterialStory4Pier5ThetaU;
+
+# Story4Pier6
+set	ColumnHingeMaterialStory4Pier6Tag	60033;
+set	ColumnHingeMaterialStory4Pier6K0	5229062.5000;
+set	ColumnHingeMaterialStory4Pier6As	0.0000;
+set	ColumnHingeMaterialStory4Pier6My	27453.0049;
+set	ColumnHingeMaterialStory4Pier6Lambda	23.2935;
+set	ColumnHingeMaterialStory4Pier6ThetaP	0.1085;
+set	ColumnHingeMaterialStory4Pier6ThetaPc	0.8516;
+set	ColumnHingeMaterialStory4Pier6Residual	0.4946;
+set	ColumnHingeMaterialStory4Pier6ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory4Pier6Tag	$ColumnHingeMaterialStory4Pier6K0	$n	$ColumnHingeMaterialStory4Pier6As	$ColumnHingeMaterialStory4Pier6My	$ColumnHingeMaterialStory4Pier6Lambda	$ColumnHingeMaterialStory4Pier6ThetaP	$ColumnHingeMaterialStory4Pier6ThetaPc	$ColumnHingeMaterialStory4Pier6Residual	$ColumnHingeMaterialStory4Pier6ThetaU;
+
+# Story4Pier7
+set	ColumnHingeMaterialStory4Pier7Tag	60034;
+set	ColumnHingeMaterialStory4Pier7K0	5229062.5000;
+set	ColumnHingeMaterialStory4Pier7As	0.0000;
+set	ColumnHingeMaterialStory4Pier7My	27453.0390;
+set	ColumnHingeMaterialStory4Pier7Lambda	23.2938;
+set	ColumnHingeMaterialStory4Pier7ThetaP	0.1085;
+set	ColumnHingeMaterialStory4Pier7ThetaPc	0.8516;
+set	ColumnHingeMaterialStory4Pier7Residual	0.4946;
+set	ColumnHingeMaterialStory4Pier7ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory4Pier7Tag	$ColumnHingeMaterialStory4Pier7K0	$n	$ColumnHingeMaterialStory4Pier7As	$ColumnHingeMaterialStory4Pier7My	$ColumnHingeMaterialStory4Pier7Lambda	$ColumnHingeMaterialStory4Pier7ThetaP	$ColumnHingeMaterialStory4Pier7ThetaPc	$ColumnHingeMaterialStory4Pier7Residual	$ColumnHingeMaterialStory4Pier7ThetaU;
+
+# Story4Pier8
+set	ColumnHingeMaterialStory4Pier8Tag	60035;
+set	ColumnHingeMaterialStory4Pier8K0	5229062.5000;
+set	ColumnHingeMaterialStory4Pier8As	0.0000;
+set	ColumnHingeMaterialStory4Pier8My	27439.1849;
+set	ColumnHingeMaterialStory4Pier8Lambda	23.1776;
+set	ColumnHingeMaterialStory4Pier8ThetaP	0.1084;
+set	ColumnHingeMaterialStory4Pier8ThetaPc	0.8495;
+set	ColumnHingeMaterialStory4Pier8Residual	0.4942;
+set	ColumnHingeMaterialStory4Pier8ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory4Pier8Tag	$ColumnHingeMaterialStory4Pier8K0	$n	$ColumnHingeMaterialStory4Pier8As	$ColumnHingeMaterialStory4Pier8My	$ColumnHingeMaterialStory4Pier8Lambda	$ColumnHingeMaterialStory4Pier8ThetaP	$ColumnHingeMaterialStory4Pier8ThetaPc	$ColumnHingeMaterialStory4Pier8Residual	$ColumnHingeMaterialStory4Pier8ThetaU;
+
+# Story4Pier9
+set	ColumnHingeMaterialStory4Pier9Tag	60036;
+set	ColumnHingeMaterialStory4Pier9K0	4150625.0000;
+set	ColumnHingeMaterialStory4Pier9As	0.0050;
+set	ColumnHingeMaterialStory4Pier9My	26141.3058;
+set	ColumnHingeMaterialStory4Pier9Lambda	47.7034;
+set	ColumnHingeMaterialStory4Pier9ThetaP	0.1990;
+set	ColumnHingeMaterialStory4Pier9ThetaPc	1.3176;
+set	ColumnHingeMaterialStory4Pier9Residual	0.4910;
+set	ColumnHingeMaterialStory4Pier9ThetaU	0.1500;
+CreateIMKMaterial	$ColumnHingeMaterialStory4Pier9Tag	$ColumnHingeMaterialStory4Pier9K0	$n	$ColumnHingeMaterialStory4Pier9As	$ColumnHingeMaterialStory4Pier9My	$ColumnHingeMaterialStory4Pier9Lambda	$ColumnHingeMaterialStory4Pier9ThetaP	$ColumnHingeMaterialStory4Pier9ThetaPc	$ColumnHingeMaterialStory4Pier9Residual	$ColumnHingeMaterialStory4Pier9ThetaU;
+
+
+
+puts "Column hinge materials defined"

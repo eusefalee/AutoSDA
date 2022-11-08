@@ -1,5 +1,3 @@
-Modules/woodSDA/woodSDAenv
-Modules/steelSDA/macenv
-Modules/steelSDA/venv
 venv/
-
+Templates/woodSDAtestinput.txt
+OpenSees/

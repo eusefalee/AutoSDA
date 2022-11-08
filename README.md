@@ -21,6 +21,16 @@ In terminal, navigate to the AutoSDA folder and type "pip install -r requirement
 
 ### Running the program
 
-The Templates folder contains the template files for the inputs to each of the 3 submodules that are necessary for them to run. Only the steelTemplate.xlsx, woodTemplate.xlsx, and rcwallTemplate.xlsx files need to be copied and filled out. The templates within the subfolders named after the modules are just to show an example of what the modules see once they are run.
+STEP 1:
+The runList.csv file should be filled out with a list of the buildings to be deisgned/analyzed as well as their geolocation, Site Class, Risk Category, and desired Ground Motions to be used.
 
+STEP 2:
+The Templates folder contains the template files for the inputs to each of the 3 submodules that are necessary for them to run. Only the steelTemplate.xlsx, woodTemplate.xlsx, and rcwallTemplate.xlsx files need to be copied and filled out. The templates within the subfolders named after the modules are just to show an example of what the module subdirectories of the inputs look like.
+
+For each building, depending on the LFRS, fill out one of the template files, name the file "Building_ID", replacing "ID" with the appropriate value and place it in the BuildingInfo folder.
+
+STEP 3:
 The main_program.py file can then be used to run the program and the output design and analysis files will be located in the Outputs folder after the program is finished running. Seismic design parameters do not need to be provided, as they are looked up by the code on seismicmaps.org website.
+
+
+Note: The building designs can be run in parallel, there is an optional input in the main_program.py file that allows the user to define the number of processors to be used.

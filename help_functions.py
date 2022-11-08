@@ -1,7 +1,3 @@
-from curses import nonl
-from genericpath import isfile
-from http.client import SEE_OTHER
-from re import S
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.by import By
@@ -16,6 +12,9 @@ import shutil
 
 # Define top level directory
 topLevelDirectory = os.getcwd()
+
+
+# Write these functions as part of a class???
 
 def onlineParamLookup(latitude,longitude,siteClass,riskCat):
     """
@@ -91,6 +90,7 @@ def nonLocParamLookup(lfrsType,riskCat):
         raise Exception('Not a valid risk category, choose I,II,III, or IV')
 
     # Determine Cd, R, rho, Ct, and x based on LFRS
+    # ASCE 7-16 Table 12.2-1
     if lfrsType == 'steelmf':
         # For steelSDA:
         # R is always 8, x is always 0.8, Ct is always 0.028,
@@ -99,7 +99,7 @@ def nonLocParamLookup(lfrsType,riskCat):
     elif lfrsType == 'woodframe':
         pass
     elif lfrsType == 'rcwall':
-        pass
+        Cd = 5; R = 5; rho = 1.3; Ct = 0.02; x = 0.75
     else:
         raise Exception('Not a supported LFRS type, please enter "steelmf", "woodframe", or "rcwall"')
 
@@ -155,13 +155,39 @@ def writeFiles(buildingData, seismicParams):
 
     elif buildingData['LFRS'].item() == 'woodframe':
         mainPath = Path("Modules","woodSDA")
+        pass
 
     elif buildingData['LFRS'].item() == 'rcwall':
+        
+        # Read input file
+        geometry = pd.read_excel(buildingInfo,header = None).T
+        geometry.columns = ['Type', 'Value']
+
+        # Define path to input files
         mainPath = Path("Modules","RCWallSDA")
+        os.chdir(mainPath)
+
+        # Combine seismic params and other inputs for compatibility with rcwallsda
+        siteclass = pd.DataFrame({"Type": 'site class', "Value": buildingData['Site Class'].item()},index=[3])
+        buildingID = pd.DataFrame({"Type": 'Building ID', "Value": buildingData['BuildingID'].item()},index=[0])
+        elfParams = pd.concat([buildingID,seismicParams,siteclass,geometry]).T
+        elfParams.rename(columns={"SS": "$S_s$"})
+        
+        # Write inputs to excel file in rcwallsda folder
+        elfParams.to_excel("input.xlsx", index = False,header=None)
 
 
     # Return to main directory
     os.chdir(topLevelDirectory)
+
+
+
+def selectGroundMotions():
+    """
+    Function to select and apply user specified ground motions to model
+    """
+    pass
+
 
 
 def runSDA(lfrsType,id):
@@ -172,14 +198,17 @@ def runSDA(lfrsType,id):
     # Determine module based on lfrs type
     if lfrsType == 'steelmf':
         module = 'steelSDA'
+        mainProgram = 'main_program'
         funcExecute = 'run_AutoSDA'
     elif lfrsType == 'woodframe':
         module = 'woodSDA'
     elif lfrsType == 'rcwall':
         module = 'RCWallSDA'
+        funcExecute = 'run_rcwallsda'
+        mainProgram = 'main_design'
 
     os.chdir(Path("Modules",module))
-    run(["python3 -c 'from main_program import " + str(funcExecute) + "; " + 
+    run(["python3 -c 'from " + mainProgram + " import " + str(funcExecute) + "; " + 
     str(funcExecute) + "([" + str(id) + "])'"],shell=True)
 
 
@@ -198,15 +227,18 @@ def getOutputs(lfrsType,id):
         outDataSource = Path("BuildingData",buildingFolder)
         elasticModelSource = Path("BuildingElasticModels",buildingFolder)
         nonlinModelSource = Path("BuildingNonlinearModels",buildingFolder)
-    
+
+        # List of data sources
+        fileSources = [outDataSource,elasticModelSource,nonlinModelSource]
+
     elif lfrsType == 'woodframe':
         pass
     elif lfrsType == 'rcwall':
-        pass
+        outDataSource = os.getcwd()
+        nonlinModelSource = Path('Nonlinear analysis')
 
-
-    # List of data sources
-    fileSources = [outDataSource,elasticModelSource,nonlinModelSource]
+        # List of data sources
+        fileSources = [outDataSource,nonlinModelSource]
 
     # Define destination folder location
     destination = Path("..","..","Outputs",buildingFolder)
@@ -228,8 +260,18 @@ def getOutputs(lfrsType,id):
             if os.path.isfile(origin):
                 shutil.copy2(origin,dest)
             else:
-                shutil.copytree(origin, dest)
+                shutil.copytree(origin, dest,dirs_exist_ok=True)
 
 
-
+def clean(cmd):
+    """
+    Function to clean the module subdirectories
+    """
+    
+    if cmd == "no":
+        return
+    elif cmd == "yes":
+        pass
+    else:
+        raise Exception("Invalid selection: Choose 'yes' or 'no'")
 
