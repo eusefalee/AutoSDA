@@ -5,7 +5,6 @@ import numpy as np
 import os
 import sys
 import shutil
-from global_variables import OpenSeesPath
 
 # #########################################################################
 #              Generate Nonlinear OpenSees model (write .tcl files)       #
@@ -911,7 +910,7 @@ class NonlinearAnalysis(object):
                 file.write(new_content)
 
             # Perform Eigen Analysis to obtain the periods which will be necessary for raleigh damping in dynamic part
-            os.system(OpenSeesPath + ' Model.tcl')
+            os.system('C:\\OpenSees\\bin\\OpenSees Model.tcl')
 
         # Update pushover parameters contained Model.tcl when performing pushover analysis
         elif analysis_type == 'PushoverAnalysis':

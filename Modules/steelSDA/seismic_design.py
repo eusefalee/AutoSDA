@@ -453,4 +453,4 @@ def seismic_design(building_id,base_directory):
     os.chdir(base_directory)
 
     # Return a class as output
-    # return building_1, building_3
+    return building_1, building_3

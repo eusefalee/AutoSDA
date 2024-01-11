@@ -19,45 +19,45 @@ set	PanelSizeLevel1Column7	[list 0 0];# No panel zone on ground floor so using [
 set	PanelSizeLevel1Column8	[list 0 0];# No panel zone on ground floor so using [0, 0] is okay
 set	PanelSizeLevel1Column9	[list 0 0];# No panel zone on ground floor so using [0, 0] is okay
 # Level 2 
-set	PanelSizeLevel2Column1	[list 36.2 27.8];
-set	PanelSizeLevel2Column2	[list 37.1 27.8];
-set	PanelSizeLevel2Column3	[list 37.1 27.8];
-set	PanelSizeLevel2Column4	[list 37.1 27.8];
-set	PanelSizeLevel2Column5	[list 37.1 27.8];
-set	PanelSizeLevel2Column6	[list 37.1 27.8];
-set	PanelSizeLevel2Column7	[list 37.1 27.8];
-set	PanelSizeLevel2Column8	[list 37.1 27.8];
-set	PanelSizeLevel2Column9	[list 36.2 27.8];
+set	PanelSizeLevel2Column1	[list 26.0 30.2];
+set	PanelSizeLevel2Column2	[list 36.2 30.2];
+set	PanelSizeLevel2Column3	[list 36.2 30.2];
+set	PanelSizeLevel2Column4	[list 36.2 30.2];
+set	PanelSizeLevel2Column5	[list 36.2 30.2];
+set	PanelSizeLevel2Column6	[list 36.2 30.2];
+set	PanelSizeLevel2Column7	[list 36.2 30.2];
+set	PanelSizeLevel2Column8	[list 36.2 30.2];
+set	PanelSizeLevel2Column9	[list 26.0 30.2];
 # Level 3 
-set	PanelSizeLevel3Column1	[list 36.2 27.8];
-set	PanelSizeLevel3Column2	[list 37.1 27.8];
-set	PanelSizeLevel3Column3	[list 37.1 27.8];
-set	PanelSizeLevel3Column4	[list 37.1 27.8];
-set	PanelSizeLevel3Column5	[list 37.1 27.8];
-set	PanelSizeLevel3Column6	[list 37.1 27.8];
-set	PanelSizeLevel3Column7	[list 37.1 27.8];
-set	PanelSizeLevel3Column8	[list 37.1 27.8];
-set	PanelSizeLevel3Column9	[list 36.2 27.8];
+set	PanelSizeLevel3Column1	[list 26.0 30.2];
+set	PanelSizeLevel3Column2	[list 36.2 30.2];
+set	PanelSizeLevel3Column3	[list 36.2 30.2];
+set	PanelSizeLevel3Column4	[list 36.2 30.2];
+set	PanelSizeLevel3Column5	[list 36.2 30.2];
+set	PanelSizeLevel3Column6	[list 36.2 30.2];
+set	PanelSizeLevel3Column7	[list 36.2 30.2];
+set	PanelSizeLevel3Column8	[list 36.2 30.2];
+set	PanelSizeLevel3Column9	[list 26.0 30.2];
 # Level 4 
-set	PanelSizeLevel4Column1	[list 25.7 24.5];
-set	PanelSizeLevel4Column2	[list 35.9 24.5];
-set	PanelSizeLevel4Column3	[list 35.9 24.5];
-set	PanelSizeLevel4Column4	[list 35.9 24.5];
-set	PanelSizeLevel4Column5	[list 35.9 24.5];
-set	PanelSizeLevel4Column6	[list 35.9 24.5];
-set	PanelSizeLevel4Column7	[list 35.9 24.5];
-set	PanelSizeLevel4Column8	[list 35.9 24.5];
-set	PanelSizeLevel4Column9	[list 25.7 24.5];
+set	PanelSizeLevel4Column1	[list 24.5 24.1];
+set	PanelSizeLevel4Column2	[list 27.3 24.1];
+set	PanelSizeLevel4Column3	[list 27.3 24.1];
+set	PanelSizeLevel4Column4	[list 27.3 24.1];
+set	PanelSizeLevel4Column5	[list 27.3 24.1];
+set	PanelSizeLevel4Column6	[list 27.3 24.1];
+set	PanelSizeLevel4Column7	[list 27.3 24.1];
+set	PanelSizeLevel4Column8	[list 27.3 24.1];
+set	PanelSizeLevel4Column9	[list 24.5 24.1];
 # Level 5 
-set	PanelSizeLevel5Column1	[list 25.7 24.5];
-set	PanelSizeLevel5Column2	[list 35.9 24.5];
-set	PanelSizeLevel5Column3	[list 35.9 24.5];
-set	PanelSizeLevel5Column4	[list 35.9 24.5];
-set	PanelSizeLevel5Column5	[list 35.9 24.5];
-set	PanelSizeLevel5Column6	[list 35.9 24.5];
-set	PanelSizeLevel5Column7	[list 35.9 24.5];
-set	PanelSizeLevel5Column8	[list 35.9 24.5];
-set	PanelSizeLevel5Column9	[list 25.7 24.5];
+set	PanelSizeLevel5Column1	[list 24.5 24.1];
+set	PanelSizeLevel5Column2	[list 27.3 24.1];
+set	PanelSizeLevel5Column3	[list 27.3 24.1];
+set	PanelSizeLevel5Column4	[list 27.3 24.1];
+set	PanelSizeLevel5Column5	[list 27.3 24.1];
+set	PanelSizeLevel5Column6	[list 27.3 24.1];
+set	PanelSizeLevel5Column7	[list 27.3 24.1];
+set	PanelSizeLevel5Column8	[list 27.3 24.1];
+set	PanelSizeLevel5Column9	[list 24.5 24.1];
 
 # Set max number of columns (excluding leaning column) and floors (counting 1 for ground)
 set	MaximumFloor	5; 

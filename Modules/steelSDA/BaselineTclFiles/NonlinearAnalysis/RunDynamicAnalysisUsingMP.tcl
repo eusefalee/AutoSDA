@@ -18,7 +18,7 @@ set allScales **intensityScales**;
 set MCEScaleFactor **SaMCEFactor**;
 
 # Define the total number of ground motions
-set numGMs 44;
+set numGMs 1;
 
 # Define the total number of models for dynamic analysis
 set numModels 1;

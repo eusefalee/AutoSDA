@@ -195,14 +195,14 @@ class PostprocessNonlinearAnalysis(object):
         for scale in self.peak_floor_acceleration:
             data = pd.DataFrame(self.peak_floor_acceleration[scale])
             data.to_excel(writer, str(scale), header=False, index=False)
-        writer.save()
+        # writer.save()
         writer.close()
         # Save residual story drifts
         writer = pd.ExcelWriter('ResidualDrift.xlsx')
         for scale in self.residual_drift:
             data = pd.DataFrame(self.residual_drift[scale])
             data.to_excel(writer, str(scale), header=False, index=False)
-        writer.save()
+        # writer.save()
         writer.close()
 
     def process_peak_story_drift(self, IDA_scales, GM_IDs):

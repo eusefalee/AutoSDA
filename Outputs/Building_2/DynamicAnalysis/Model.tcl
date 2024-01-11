@@ -4,8 +4,8 @@ wipe all;
 model BasicBuilder -ndm 2 -ndf 3;
 
 # Define the periods to use for the Rayleigh damping calculations
-set periodForRayleighDamping_1 0.6076173628672519;	# Mode 1 period - NEEDS to be UPDATED
-set periodForRayleighDamping_2 0.09214819300794426;	# Mode 3 period - NEEDS to be UPDATED
+set periodForRayleighDamping_1 0.7374621541712127;	# Mode 1 period - NEEDS to be UPDATED
+set periodForRayleighDamping_2 0.12358855265143721;	# Mode 3 period - NEEDS to be UPDATED
 
 # Defining variables
 source DefineVariables.tcl

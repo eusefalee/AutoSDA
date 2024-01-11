@@ -23,8 +23,6 @@ steel = SteelMaterial(yield_stress=50, ultimate_stress=65, elastic_modulus=29000
 # Define path to where ElasticAnalysis tool base directory
 base_directory = pathlib.Path(os.getcwd())
 
-# Define path to OpenSees
-OpenSeesPath = os.path.join(base_directory,"..","..","OpenSees","bin","OpenSees")
 
 ##########################################################################
 #            User Defined Ratios Involved in Design                      #
@@ -146,4 +144,5 @@ ACCELERATION_SPECTRUM = pd.read_csv('AccelerationSpcetra5Percent.csv', header=0)
 IDA_SCALES = [100, 150, 200, 250]
 
 # Define the IDs used for label the ground motions
-GM_IDs = range(1, 44+1)
+# GM_IDs = range(1, 44+1)
+GM_IDs = [1]

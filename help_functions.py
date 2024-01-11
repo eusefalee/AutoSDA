@@ -26,7 +26,8 @@ def onlineParamLookup(latitude,longitude,siteClass,riskCat):
     options = webdriver.ChromeOptions()
     options.add_argument('headless') # navigate website in background w/o opening a window
     driver = webdriver.Chrome(ChromeDriverManager().install(),options=options)
-
+    
+    print("webdriver created")
     # Open seismic maps website
     driver.get('https://www.seismicmaps.org/')
 
@@ -97,7 +98,7 @@ def nonLocParamLookup(lfrsType,riskCat):
         # Cd always 5.5 and rho is always 1.0
         Cd = 5.5; R = 8; rho = 1; Ct = 0.028; x = 0.8
     elif lfrsType == 'woodframe':
-        pass
+        return
     elif lfrsType == 'rcwall':
         Cd = 5; R = 5; rho = 1.3; Ct = 0.02; x = 0.75
     else:
@@ -115,15 +116,17 @@ def writeFiles(buildingData, seismicParams):
     Function to create the necessary files and directories for the corresponding
     module for each building
     """
-    
+    print("writing files")
     # Read in building-specific inputs from excel file
-    filePath = Path(
-        "BuildingInfo",
-        "Building_" + str(buildingData['BuildingID'].item()) + ".xlsx"
-        )
-    buildingInfo = pd.ExcelFile(filePath)
+
 
     if buildingData['LFRS'].item() == 'steelmf':
+
+        filePath = Path(
+            "BuildingInfo",
+            "Building_" + str(buildingData['BuildingID'].item()) + ".xlsx"
+            )
+        buildingInfo = pd.ExcelFile(filePath)
 
         # Get required inputs from buildingInfo file
         geometry = pd.read_excel(buildingInfo, "Geometry")
@@ -154,11 +157,26 @@ def writeFiles(buildingData, seismicParams):
         elfParams.to_csv('ELFParameters.csv',index=False)
 
     elif buildingData['LFRS'].item() == 'woodframe':
-        mainPath = Path("Modules","woodSDA")
-        pass
+
+        topLevelFolder = Path("BuildingInfo", "Building_" + str(buildingData['BuildingID'].item()))
+        print("top level building folder defined as ", topLevelFolder)
+        mainPath = Path("Modules",
+                        "woodSDA",
+                        "BuildingInfo",
+                        "Building_" + str(buildingData['BuildingID'].item()))
+        print("main path defined as ",mainPath)
+        os.makedirs(mainPath,exist_ok=True)
+
+        # Copy the entire input folder from the top level building info directory to the woodSDA building info
+        shutil.copytree(topLevelFolder,mainPath,dirs_exist_ok=True)
+        os.chdir(mainPath)
 
     elif buildingData['LFRS'].item() == 'rcwall':
-        
+        filePath = Path(
+        "BuildingInfo",
+        "Building_" + str(buildingData['BuildingID'].item()) + ".xlsx"
+        )
+        buildingInfo = pd.ExcelFile(filePath)
         # Read input file
         geometry = pd.read_excel(buildingInfo,header = None).T
         geometry.columns = ['Type', 'Value']
@@ -186,6 +204,8 @@ def selectGroundMotions():
     """
     Function to select and apply user specified ground motions to model
     """
+
+    # C
     pass
 
 
@@ -198,18 +218,22 @@ def runSDA(lfrsType,id):
     # Determine module based on lfrs type
     if lfrsType == 'steelmf':
         module = 'steelSDA'
-        mainProgram = 'main_program'
-        funcExecute = 'run_AutoSDA'
+        mainProgram = 'main_program.py'
+        # funcExecute = 'run_AutoSDA'
     elif lfrsType == 'woodframe':
-        module = 'woodSDA'
+        module = 'woodSDA\Codes'
+        mainProgram = 'woodSDA_driver.py'
     elif lfrsType == 'rcwall':
         module = 'RCWallSDA'
-        funcExecute = 'run_rcwallsda'
+        # funcExecute = 'run_rcwallsda'
         mainProgram = 'main_design'
 
+    # Execute submodule
     os.chdir(Path("Modules",module))
-    run(["python3 -c 'from " + mainProgram + " import " + str(funcExecute) + "; " + 
-    str(funcExecute) + "([" + str(id) + "])'"],shell=True)
+    os.system("python " + mainProgram + " " + str(id))
+    # run(["python " + mainProgram],shell=True)
+    # run(["python -c 'from " + mainProgram + " import " + str(funcExecute) + "; " + str(funcExecute) +
+    #       "([" + str(id) + "])'"],shell=True)
 
 
 

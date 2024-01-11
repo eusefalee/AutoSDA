@@ -41,6 +41,6 @@ def run_dynamic_analysis_using_MP(base_directory, IDA_scales, building_id, SaMCE
     with open('RunDynamicAnalysisUsingMP.tcl', 'w') as file:
         file.write(new_content)
     # Run the dynamic analysis using OpenSeesMP (Change the number of cores that you need in the following line)
-    command = '"C:\\Program Files\\MPICH2\\bin\\mpiexec" -channel auto -np ' + str(number_of_core) \
+    command = '"C:\\Program Files\\MPICH2\\bin\\mpiexec" -n ' + str(number_of_core) \
               + ' OpenSeesMP.exe RunDynamicAnalysisUsingMP.tcl'
     os.system(command)

@@ -1476,7 +1476,7 @@ def generateModalAnalysisModel(ID, BuildingModel, BaseDirectory, DB_Directory, N
         define3DEigenValueAnalysisModel(ModelDirectory + '/EigenValueAnalysis', BuildingModel)
 
         os.system("cd %s/EigenValueAnalysis"%ModelDirectory)
-        os.system('/Applications/OpenSees/bin/OpenSees Model.tcl')
+        os.system('C:\\OpenSees\\bin\\OpenSees Model.tcl')
     
     with open(ModelDirectory + '/EigenValueAnalysis/Analysis_Results/Modes/periods.out', 'r') as f:
         temp = f.read() 

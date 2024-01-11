@@ -11,7 +11,7 @@ from global_variables import BEAM_STIFFNESS_REDUCTION
 # ********************************************* May 5, 2021 Ends *******************************************************
 from global_variables import COLUMN_BASE
 # ********************************************* Jan 28, 2022 ***********************************************************
-from global_variables import OpenSeesPath
+
 
 
 # #########################################################################
@@ -788,6 +788,6 @@ class ElasticAnalysis(object):
 
     def run_OpenSees_program(self):
         # This method is used to run the "RunModel.bat" file. OpenSees.exe program is thus run.
-        os.system(OpenSeesPath + ' Model.tcl')
+        os.system('C:\\OpenSees\\bin\\OpenSees Model.tcl')
         # os.system('C:\\Tcl\\lib\\OpenSees Model.tcl')
         # os.system('C:\\Users\\61946\\Downloads\\OpenSees3.3.0-x64.exe\\OpenSees3.3.0-x64.exe\\bin\\OpenSees Model.tcl')

@@ -50,6 +50,8 @@ def AutoSDA_main(id):
         currentBuilding['Risk Category'].item()
     )
 
+    print("online params defined")
+
     # Lookup non-location based parameters Cd, rho, Ct, R, Ie, and x
     seismicNonlocParams = nonLocParamLookup(
         currentBuilding['LFRS'].item(),

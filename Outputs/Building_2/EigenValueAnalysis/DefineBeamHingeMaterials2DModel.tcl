@@ -3,384 +3,384 @@
 
 # Level2Bay1
 set	BeamHingeMaterialLevel2Bay1Tag	70001;
-set	BeamHingeMaterialLevel2Bay1K0	3393000.0000;
-set	BeamHingeMaterialLevel2Bay1As	0.0300;
-set	BeamHingeMaterialLevel2Bay1My	28500.0000;
-set	BeamHingeMaterialLevel2Bay1Lambda	1.5900;
-set	BeamHingeMaterialLevel2Bay1ThetaP	0.0280;
-set	BeamHingeMaterialLevel2Bay1ThetaPc	0.2355;
+set	BeamHingeMaterialLevel2Bay1K0	2590666.6667;
+set	BeamHingeMaterialLevel2Bay1As	0.0340;
+set	BeamHingeMaterialLevel2Bay1My	20400.0000;
+set	BeamHingeMaterialLevel2Bay1Lambda	1.1135;
+set	BeamHingeMaterialLevel2Bay1ThetaP	0.0232;
+set	BeamHingeMaterialLevel2Bay1ThetaPc	0.2066;
 set	BeamHingeMaterialLevel2Bay1Residual	0.4000;
 set	BeamHingeMaterialLevel2Bay1ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel2Bay1Tag	$BeamHingeMaterialLevel2Bay1K0	$n	$BeamHingeMaterialLevel2Bay1As	$BeamHingeMaterialLevel2Bay1My	$BeamHingeMaterialLevel2Bay1Lambda	$BeamHingeMaterialLevel2Bay1ThetaP	$BeamHingeMaterialLevel2Bay1ThetaPc	$BeamHingeMaterialLevel2Bay1Residual	$BeamHingeMaterialLevel2Bay1ThetaU;
 
 # Level2Bay2
 set	BeamHingeMaterialLevel2Bay2Tag	70002;
-set	BeamHingeMaterialLevel2Bay2K0	3393000.0000;
-set	BeamHingeMaterialLevel2Bay2As	0.0300;
-set	BeamHingeMaterialLevel2Bay2My	28500.0000;
-set	BeamHingeMaterialLevel2Bay2Lambda	1.5900;
-set	BeamHingeMaterialLevel2Bay2ThetaP	0.0280;
-set	BeamHingeMaterialLevel2Bay2ThetaPc	0.2355;
+set	BeamHingeMaterialLevel2Bay2K0	2590666.6667;
+set	BeamHingeMaterialLevel2Bay2As	0.0340;
+set	BeamHingeMaterialLevel2Bay2My	20400.0000;
+set	BeamHingeMaterialLevel2Bay2Lambda	1.1135;
+set	BeamHingeMaterialLevel2Bay2ThetaP	0.0232;
+set	BeamHingeMaterialLevel2Bay2ThetaPc	0.2066;
 set	BeamHingeMaterialLevel2Bay2Residual	0.4000;
 set	BeamHingeMaterialLevel2Bay2ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel2Bay2Tag	$BeamHingeMaterialLevel2Bay2K0	$n	$BeamHingeMaterialLevel2Bay2As	$BeamHingeMaterialLevel2Bay2My	$BeamHingeMaterialLevel2Bay2Lambda	$BeamHingeMaterialLevel2Bay2ThetaP	$BeamHingeMaterialLevel2Bay2ThetaPc	$BeamHingeMaterialLevel2Bay2Residual	$BeamHingeMaterialLevel2Bay2ThetaU;
 
 # Level2Bay3
 set	BeamHingeMaterialLevel2Bay3Tag	70003;
-set	BeamHingeMaterialLevel2Bay3K0	3393000.0000;
-set	BeamHingeMaterialLevel2Bay3As	0.0300;
-set	BeamHingeMaterialLevel2Bay3My	28500.0000;
-set	BeamHingeMaterialLevel2Bay3Lambda	1.5900;
-set	BeamHingeMaterialLevel2Bay3ThetaP	0.0280;
-set	BeamHingeMaterialLevel2Bay3ThetaPc	0.2355;
+set	BeamHingeMaterialLevel2Bay3K0	2590666.6667;
+set	BeamHingeMaterialLevel2Bay3As	0.0340;
+set	BeamHingeMaterialLevel2Bay3My	20400.0000;
+set	BeamHingeMaterialLevel2Bay3Lambda	1.1135;
+set	BeamHingeMaterialLevel2Bay3ThetaP	0.0232;
+set	BeamHingeMaterialLevel2Bay3ThetaPc	0.2066;
 set	BeamHingeMaterialLevel2Bay3Residual	0.4000;
 set	BeamHingeMaterialLevel2Bay3ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel2Bay3Tag	$BeamHingeMaterialLevel2Bay3K0	$n	$BeamHingeMaterialLevel2Bay3As	$BeamHingeMaterialLevel2Bay3My	$BeamHingeMaterialLevel2Bay3Lambda	$BeamHingeMaterialLevel2Bay3ThetaP	$BeamHingeMaterialLevel2Bay3ThetaPc	$BeamHingeMaterialLevel2Bay3Residual	$BeamHingeMaterialLevel2Bay3ThetaU;
 
 # Level2Bay4
 set	BeamHingeMaterialLevel2Bay4Tag	70004;
-set	BeamHingeMaterialLevel2Bay4K0	3393000.0000;
-set	BeamHingeMaterialLevel2Bay4As	0.0300;
-set	BeamHingeMaterialLevel2Bay4My	28500.0000;
-set	BeamHingeMaterialLevel2Bay4Lambda	1.5900;
-set	BeamHingeMaterialLevel2Bay4ThetaP	0.0280;
-set	BeamHingeMaterialLevel2Bay4ThetaPc	0.2355;
+set	BeamHingeMaterialLevel2Bay4K0	2590666.6667;
+set	BeamHingeMaterialLevel2Bay4As	0.0340;
+set	BeamHingeMaterialLevel2Bay4My	20400.0000;
+set	BeamHingeMaterialLevel2Bay4Lambda	1.1135;
+set	BeamHingeMaterialLevel2Bay4ThetaP	0.0232;
+set	BeamHingeMaterialLevel2Bay4ThetaPc	0.2066;
 set	BeamHingeMaterialLevel2Bay4Residual	0.4000;
 set	BeamHingeMaterialLevel2Bay4ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel2Bay4Tag	$BeamHingeMaterialLevel2Bay4K0	$n	$BeamHingeMaterialLevel2Bay4As	$BeamHingeMaterialLevel2Bay4My	$BeamHingeMaterialLevel2Bay4Lambda	$BeamHingeMaterialLevel2Bay4ThetaP	$BeamHingeMaterialLevel2Bay4ThetaPc	$BeamHingeMaterialLevel2Bay4Residual	$BeamHingeMaterialLevel2Bay4ThetaU;
 
 # Level2Bay5
 set	BeamHingeMaterialLevel2Bay5Tag	70005;
-set	BeamHingeMaterialLevel2Bay5K0	3393000.0000;
-set	BeamHingeMaterialLevel2Bay5As	0.0300;
-set	BeamHingeMaterialLevel2Bay5My	28500.0000;
-set	BeamHingeMaterialLevel2Bay5Lambda	1.5900;
-set	BeamHingeMaterialLevel2Bay5ThetaP	0.0280;
-set	BeamHingeMaterialLevel2Bay5ThetaPc	0.2355;
+set	BeamHingeMaterialLevel2Bay5K0	2590666.6667;
+set	BeamHingeMaterialLevel2Bay5As	0.0340;
+set	BeamHingeMaterialLevel2Bay5My	20400.0000;
+set	BeamHingeMaterialLevel2Bay5Lambda	1.1135;
+set	BeamHingeMaterialLevel2Bay5ThetaP	0.0232;
+set	BeamHingeMaterialLevel2Bay5ThetaPc	0.2066;
 set	BeamHingeMaterialLevel2Bay5Residual	0.4000;
 set	BeamHingeMaterialLevel2Bay5ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel2Bay5Tag	$BeamHingeMaterialLevel2Bay5K0	$n	$BeamHingeMaterialLevel2Bay5As	$BeamHingeMaterialLevel2Bay5My	$BeamHingeMaterialLevel2Bay5Lambda	$BeamHingeMaterialLevel2Bay5ThetaP	$BeamHingeMaterialLevel2Bay5ThetaPc	$BeamHingeMaterialLevel2Bay5Residual	$BeamHingeMaterialLevel2Bay5ThetaU;
 
 # Level2Bay6
 set	BeamHingeMaterialLevel2Bay6Tag	70006;
-set	BeamHingeMaterialLevel2Bay6K0	3393000.0000;
-set	BeamHingeMaterialLevel2Bay6As	0.0300;
-set	BeamHingeMaterialLevel2Bay6My	28500.0000;
-set	BeamHingeMaterialLevel2Bay6Lambda	1.5900;
-set	BeamHingeMaterialLevel2Bay6ThetaP	0.0280;
-set	BeamHingeMaterialLevel2Bay6ThetaPc	0.2355;
+set	BeamHingeMaterialLevel2Bay6K0	2590666.6667;
+set	BeamHingeMaterialLevel2Bay6As	0.0340;
+set	BeamHingeMaterialLevel2Bay6My	20400.0000;
+set	BeamHingeMaterialLevel2Bay6Lambda	1.1135;
+set	BeamHingeMaterialLevel2Bay6ThetaP	0.0232;
+set	BeamHingeMaterialLevel2Bay6ThetaPc	0.2066;
 set	BeamHingeMaterialLevel2Bay6Residual	0.4000;
 set	BeamHingeMaterialLevel2Bay6ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel2Bay6Tag	$BeamHingeMaterialLevel2Bay6K0	$n	$BeamHingeMaterialLevel2Bay6As	$BeamHingeMaterialLevel2Bay6My	$BeamHingeMaterialLevel2Bay6Lambda	$BeamHingeMaterialLevel2Bay6ThetaP	$BeamHingeMaterialLevel2Bay6ThetaPc	$BeamHingeMaterialLevel2Bay6Residual	$BeamHingeMaterialLevel2Bay6ThetaU;
 
 # Level2Bay7
 set	BeamHingeMaterialLevel2Bay7Tag	70007;
-set	BeamHingeMaterialLevel2Bay7K0	3393000.0000;
-set	BeamHingeMaterialLevel2Bay7As	0.0300;
-set	BeamHingeMaterialLevel2Bay7My	28500.0000;
-set	BeamHingeMaterialLevel2Bay7Lambda	1.5900;
-set	BeamHingeMaterialLevel2Bay7ThetaP	0.0280;
-set	BeamHingeMaterialLevel2Bay7ThetaPc	0.2355;
+set	BeamHingeMaterialLevel2Bay7K0	2590666.6667;
+set	BeamHingeMaterialLevel2Bay7As	0.0340;
+set	BeamHingeMaterialLevel2Bay7My	20400.0000;
+set	BeamHingeMaterialLevel2Bay7Lambda	1.1135;
+set	BeamHingeMaterialLevel2Bay7ThetaP	0.0232;
+set	BeamHingeMaterialLevel2Bay7ThetaPc	0.2066;
 set	BeamHingeMaterialLevel2Bay7Residual	0.4000;
 set	BeamHingeMaterialLevel2Bay7ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel2Bay7Tag	$BeamHingeMaterialLevel2Bay7K0	$n	$BeamHingeMaterialLevel2Bay7As	$BeamHingeMaterialLevel2Bay7My	$BeamHingeMaterialLevel2Bay7Lambda	$BeamHingeMaterialLevel2Bay7ThetaP	$BeamHingeMaterialLevel2Bay7ThetaPc	$BeamHingeMaterialLevel2Bay7Residual	$BeamHingeMaterialLevel2Bay7ThetaU;
 
 # Level2Bay8
 set	BeamHingeMaterialLevel2Bay8Tag	70008;
-set	BeamHingeMaterialLevel2Bay8K0	3393000.0000;
-set	BeamHingeMaterialLevel2Bay8As	0.0300;
-set	BeamHingeMaterialLevel2Bay8My	28500.0000;
-set	BeamHingeMaterialLevel2Bay8Lambda	1.5900;
-set	BeamHingeMaterialLevel2Bay8ThetaP	0.0280;
-set	BeamHingeMaterialLevel2Bay8ThetaPc	0.2355;
+set	BeamHingeMaterialLevel2Bay8K0	2590666.6667;
+set	BeamHingeMaterialLevel2Bay8As	0.0340;
+set	BeamHingeMaterialLevel2Bay8My	20400.0000;
+set	BeamHingeMaterialLevel2Bay8Lambda	1.1135;
+set	BeamHingeMaterialLevel2Bay8ThetaP	0.0232;
+set	BeamHingeMaterialLevel2Bay8ThetaPc	0.2066;
 set	BeamHingeMaterialLevel2Bay8Residual	0.4000;
 set	BeamHingeMaterialLevel2Bay8ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel2Bay8Tag	$BeamHingeMaterialLevel2Bay8K0	$n	$BeamHingeMaterialLevel2Bay8As	$BeamHingeMaterialLevel2Bay8My	$BeamHingeMaterialLevel2Bay8Lambda	$BeamHingeMaterialLevel2Bay8ThetaP	$BeamHingeMaterialLevel2Bay8ThetaPc	$BeamHingeMaterialLevel2Bay8Residual	$BeamHingeMaterialLevel2Bay8ThetaU;
 
 # Level3Bay1
 set	BeamHingeMaterialLevel3Bay1Tag	70009;
-set	BeamHingeMaterialLevel3Bay1K0	3393000.0000;
-set	BeamHingeMaterialLevel3Bay1As	0.0300;
-set	BeamHingeMaterialLevel3Bay1My	28500.0000;
-set	BeamHingeMaterialLevel3Bay1Lambda	1.5900;
-set	BeamHingeMaterialLevel3Bay1ThetaP	0.0280;
-set	BeamHingeMaterialLevel3Bay1ThetaPc	0.2355;
+set	BeamHingeMaterialLevel3Bay1K0	2590666.6667;
+set	BeamHingeMaterialLevel3Bay1As	0.0340;
+set	BeamHingeMaterialLevel3Bay1My	20400.0000;
+set	BeamHingeMaterialLevel3Bay1Lambda	1.1135;
+set	BeamHingeMaterialLevel3Bay1ThetaP	0.0232;
+set	BeamHingeMaterialLevel3Bay1ThetaPc	0.2066;
 set	BeamHingeMaterialLevel3Bay1Residual	0.4000;
 set	BeamHingeMaterialLevel3Bay1ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel3Bay1Tag	$BeamHingeMaterialLevel3Bay1K0	$n	$BeamHingeMaterialLevel3Bay1As	$BeamHingeMaterialLevel3Bay1My	$BeamHingeMaterialLevel3Bay1Lambda	$BeamHingeMaterialLevel3Bay1ThetaP	$BeamHingeMaterialLevel3Bay1ThetaPc	$BeamHingeMaterialLevel3Bay1Residual	$BeamHingeMaterialLevel3Bay1ThetaU;
 
 # Level3Bay2
 set	BeamHingeMaterialLevel3Bay2Tag	70010;
-set	BeamHingeMaterialLevel3Bay2K0	3393000.0000;
-set	BeamHingeMaterialLevel3Bay2As	0.0300;
-set	BeamHingeMaterialLevel3Bay2My	28500.0000;
-set	BeamHingeMaterialLevel3Bay2Lambda	1.5900;
-set	BeamHingeMaterialLevel3Bay2ThetaP	0.0280;
-set	BeamHingeMaterialLevel3Bay2ThetaPc	0.2355;
+set	BeamHingeMaterialLevel3Bay2K0	2590666.6667;
+set	BeamHingeMaterialLevel3Bay2As	0.0340;
+set	BeamHingeMaterialLevel3Bay2My	20400.0000;
+set	BeamHingeMaterialLevel3Bay2Lambda	1.1135;
+set	BeamHingeMaterialLevel3Bay2ThetaP	0.0232;
+set	BeamHingeMaterialLevel3Bay2ThetaPc	0.2066;
 set	BeamHingeMaterialLevel3Bay2Residual	0.4000;
 set	BeamHingeMaterialLevel3Bay2ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel3Bay2Tag	$BeamHingeMaterialLevel3Bay2K0	$n	$BeamHingeMaterialLevel3Bay2As	$BeamHingeMaterialLevel3Bay2My	$BeamHingeMaterialLevel3Bay2Lambda	$BeamHingeMaterialLevel3Bay2ThetaP	$BeamHingeMaterialLevel3Bay2ThetaPc	$BeamHingeMaterialLevel3Bay2Residual	$BeamHingeMaterialLevel3Bay2ThetaU;
 
 # Level3Bay3
 set	BeamHingeMaterialLevel3Bay3Tag	70011;
-set	BeamHingeMaterialLevel3Bay3K0	3393000.0000;
-set	BeamHingeMaterialLevel3Bay3As	0.0300;
-set	BeamHingeMaterialLevel3Bay3My	28500.0000;
-set	BeamHingeMaterialLevel3Bay3Lambda	1.5900;
-set	BeamHingeMaterialLevel3Bay3ThetaP	0.0280;
-set	BeamHingeMaterialLevel3Bay3ThetaPc	0.2355;
+set	BeamHingeMaterialLevel3Bay3K0	2590666.6667;
+set	BeamHingeMaterialLevel3Bay3As	0.0340;
+set	BeamHingeMaterialLevel3Bay3My	20400.0000;
+set	BeamHingeMaterialLevel3Bay3Lambda	1.1135;
+set	BeamHingeMaterialLevel3Bay3ThetaP	0.0232;
+set	BeamHingeMaterialLevel3Bay3ThetaPc	0.2066;
 set	BeamHingeMaterialLevel3Bay3Residual	0.4000;
 set	BeamHingeMaterialLevel3Bay3ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel3Bay3Tag	$BeamHingeMaterialLevel3Bay3K0	$n	$BeamHingeMaterialLevel3Bay3As	$BeamHingeMaterialLevel3Bay3My	$BeamHingeMaterialLevel3Bay3Lambda	$BeamHingeMaterialLevel3Bay3ThetaP	$BeamHingeMaterialLevel3Bay3ThetaPc	$BeamHingeMaterialLevel3Bay3Residual	$BeamHingeMaterialLevel3Bay3ThetaU;
 
 # Level3Bay4
 set	BeamHingeMaterialLevel3Bay4Tag	70012;
-set	BeamHingeMaterialLevel3Bay4K0	3393000.0000;
-set	BeamHingeMaterialLevel3Bay4As	0.0300;
-set	BeamHingeMaterialLevel3Bay4My	28500.0000;
-set	BeamHingeMaterialLevel3Bay4Lambda	1.5900;
-set	BeamHingeMaterialLevel3Bay4ThetaP	0.0280;
-set	BeamHingeMaterialLevel3Bay4ThetaPc	0.2355;
+set	BeamHingeMaterialLevel3Bay4K0	2590666.6667;
+set	BeamHingeMaterialLevel3Bay4As	0.0340;
+set	BeamHingeMaterialLevel3Bay4My	20400.0000;
+set	BeamHingeMaterialLevel3Bay4Lambda	1.1135;
+set	BeamHingeMaterialLevel3Bay4ThetaP	0.0232;
+set	BeamHingeMaterialLevel3Bay4ThetaPc	0.2066;
 set	BeamHingeMaterialLevel3Bay4Residual	0.4000;
 set	BeamHingeMaterialLevel3Bay4ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel3Bay4Tag	$BeamHingeMaterialLevel3Bay4K0	$n	$BeamHingeMaterialLevel3Bay4As	$BeamHingeMaterialLevel3Bay4My	$BeamHingeMaterialLevel3Bay4Lambda	$BeamHingeMaterialLevel3Bay4ThetaP	$BeamHingeMaterialLevel3Bay4ThetaPc	$BeamHingeMaterialLevel3Bay4Residual	$BeamHingeMaterialLevel3Bay4ThetaU;
 
 # Level3Bay5
 set	BeamHingeMaterialLevel3Bay5Tag	70013;
-set	BeamHingeMaterialLevel3Bay5K0	3393000.0000;
-set	BeamHingeMaterialLevel3Bay5As	0.0300;
-set	BeamHingeMaterialLevel3Bay5My	28500.0000;
-set	BeamHingeMaterialLevel3Bay5Lambda	1.5900;
-set	BeamHingeMaterialLevel3Bay5ThetaP	0.0280;
-set	BeamHingeMaterialLevel3Bay5ThetaPc	0.2355;
+set	BeamHingeMaterialLevel3Bay5K0	2590666.6667;
+set	BeamHingeMaterialLevel3Bay5As	0.0340;
+set	BeamHingeMaterialLevel3Bay5My	20400.0000;
+set	BeamHingeMaterialLevel3Bay5Lambda	1.1135;
+set	BeamHingeMaterialLevel3Bay5ThetaP	0.0232;
+set	BeamHingeMaterialLevel3Bay5ThetaPc	0.2066;
 set	BeamHingeMaterialLevel3Bay5Residual	0.4000;
 set	BeamHingeMaterialLevel3Bay5ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel3Bay5Tag	$BeamHingeMaterialLevel3Bay5K0	$n	$BeamHingeMaterialLevel3Bay5As	$BeamHingeMaterialLevel3Bay5My	$BeamHingeMaterialLevel3Bay5Lambda	$BeamHingeMaterialLevel3Bay5ThetaP	$BeamHingeMaterialLevel3Bay5ThetaPc	$BeamHingeMaterialLevel3Bay5Residual	$BeamHingeMaterialLevel3Bay5ThetaU;
 
 # Level3Bay6
 set	BeamHingeMaterialLevel3Bay6Tag	70014;
-set	BeamHingeMaterialLevel3Bay6K0	3393000.0000;
-set	BeamHingeMaterialLevel3Bay6As	0.0300;
-set	BeamHingeMaterialLevel3Bay6My	28500.0000;
-set	BeamHingeMaterialLevel3Bay6Lambda	1.5900;
-set	BeamHingeMaterialLevel3Bay6ThetaP	0.0280;
-set	BeamHingeMaterialLevel3Bay6ThetaPc	0.2355;
+set	BeamHingeMaterialLevel3Bay6K0	2590666.6667;
+set	BeamHingeMaterialLevel3Bay6As	0.0340;
+set	BeamHingeMaterialLevel3Bay6My	20400.0000;
+set	BeamHingeMaterialLevel3Bay6Lambda	1.1135;
+set	BeamHingeMaterialLevel3Bay6ThetaP	0.0232;
+set	BeamHingeMaterialLevel3Bay6ThetaPc	0.2066;
 set	BeamHingeMaterialLevel3Bay6Residual	0.4000;
 set	BeamHingeMaterialLevel3Bay6ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel3Bay6Tag	$BeamHingeMaterialLevel3Bay6K0	$n	$BeamHingeMaterialLevel3Bay6As	$BeamHingeMaterialLevel3Bay6My	$BeamHingeMaterialLevel3Bay6Lambda	$BeamHingeMaterialLevel3Bay6ThetaP	$BeamHingeMaterialLevel3Bay6ThetaPc	$BeamHingeMaterialLevel3Bay6Residual	$BeamHingeMaterialLevel3Bay6ThetaU;
 
 # Level3Bay7
 set	BeamHingeMaterialLevel3Bay7Tag	70015;
-set	BeamHingeMaterialLevel3Bay7K0	3393000.0000;
-set	BeamHingeMaterialLevel3Bay7As	0.0300;
-set	BeamHingeMaterialLevel3Bay7My	28500.0000;
-set	BeamHingeMaterialLevel3Bay7Lambda	1.5900;
-set	BeamHingeMaterialLevel3Bay7ThetaP	0.0280;
-set	BeamHingeMaterialLevel3Bay7ThetaPc	0.2355;
+set	BeamHingeMaterialLevel3Bay7K0	2590666.6667;
+set	BeamHingeMaterialLevel3Bay7As	0.0340;
+set	BeamHingeMaterialLevel3Bay7My	20400.0000;
+set	BeamHingeMaterialLevel3Bay7Lambda	1.1135;
+set	BeamHingeMaterialLevel3Bay7ThetaP	0.0232;
+set	BeamHingeMaterialLevel3Bay7ThetaPc	0.2066;
 set	BeamHingeMaterialLevel3Bay7Residual	0.4000;
 set	BeamHingeMaterialLevel3Bay7ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel3Bay7Tag	$BeamHingeMaterialLevel3Bay7K0	$n	$BeamHingeMaterialLevel3Bay7As	$BeamHingeMaterialLevel3Bay7My	$BeamHingeMaterialLevel3Bay7Lambda	$BeamHingeMaterialLevel3Bay7ThetaP	$BeamHingeMaterialLevel3Bay7ThetaPc	$BeamHingeMaterialLevel3Bay7Residual	$BeamHingeMaterialLevel3Bay7ThetaU;
 
 # Level3Bay8
 set	BeamHingeMaterialLevel3Bay8Tag	70016;
-set	BeamHingeMaterialLevel3Bay8K0	3393000.0000;
-set	BeamHingeMaterialLevel3Bay8As	0.0300;
-set	BeamHingeMaterialLevel3Bay8My	28500.0000;
-set	BeamHingeMaterialLevel3Bay8Lambda	1.5900;
-set	BeamHingeMaterialLevel3Bay8ThetaP	0.0280;
-set	BeamHingeMaterialLevel3Bay8ThetaPc	0.2355;
+set	BeamHingeMaterialLevel3Bay8K0	2590666.6667;
+set	BeamHingeMaterialLevel3Bay8As	0.0340;
+set	BeamHingeMaterialLevel3Bay8My	20400.0000;
+set	BeamHingeMaterialLevel3Bay8Lambda	1.1135;
+set	BeamHingeMaterialLevel3Bay8ThetaP	0.0232;
+set	BeamHingeMaterialLevel3Bay8ThetaPc	0.2066;
 set	BeamHingeMaterialLevel3Bay8Residual	0.4000;
 set	BeamHingeMaterialLevel3Bay8ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel3Bay8Tag	$BeamHingeMaterialLevel3Bay8K0	$n	$BeamHingeMaterialLevel3Bay8As	$BeamHingeMaterialLevel3Bay8My	$BeamHingeMaterialLevel3Bay8Lambda	$BeamHingeMaterialLevel3Bay8ThetaP	$BeamHingeMaterialLevel3Bay8ThetaPc	$BeamHingeMaterialLevel3Bay8Residual	$BeamHingeMaterialLevel3Bay8ThetaU;
 
 # Level4Bay1
 set	BeamHingeMaterialLevel4Bay1Tag	70017;
-set	BeamHingeMaterialLevel4Bay1K0	1943000.0000;
-set	BeamHingeMaterialLevel4Bay1As	0.0320;
-set	BeamHingeMaterialLevel4Bay1My	18500.0000;
-set	BeamHingeMaterialLevel4Bay1Lambda	1.3425;
-set	BeamHingeMaterialLevel4Bay1ThetaP	0.0297;
-set	BeamHingeMaterialLevel4Bay1ThetaPc	0.2052;
+set	BeamHingeMaterialLevel4Bay1K0	1145500.0000;
+set	BeamHingeMaterialLevel4Bay1As	0.0356;
+set	BeamHingeMaterialLevel4Bay1My	11200.0000;
+set	BeamHingeMaterialLevel4Bay1Lambda	1.0695;
+set	BeamHingeMaterialLevel4Bay1ThetaP	0.0275;
+set	BeamHingeMaterialLevel4Bay1ThetaPc	0.2006;
 set	BeamHingeMaterialLevel4Bay1Residual	0.4000;
 set	BeamHingeMaterialLevel4Bay1ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel4Bay1Tag	$BeamHingeMaterialLevel4Bay1K0	$n	$BeamHingeMaterialLevel4Bay1As	$BeamHingeMaterialLevel4Bay1My	$BeamHingeMaterialLevel4Bay1Lambda	$BeamHingeMaterialLevel4Bay1ThetaP	$BeamHingeMaterialLevel4Bay1ThetaPc	$BeamHingeMaterialLevel4Bay1Residual	$BeamHingeMaterialLevel4Bay1ThetaU;
 
 # Level4Bay2
 set	BeamHingeMaterialLevel4Bay2Tag	70018;
-set	BeamHingeMaterialLevel4Bay2K0	1943000.0000;
-set	BeamHingeMaterialLevel4Bay2As	0.0320;
-set	BeamHingeMaterialLevel4Bay2My	18500.0000;
-set	BeamHingeMaterialLevel4Bay2Lambda	1.3425;
-set	BeamHingeMaterialLevel4Bay2ThetaP	0.0297;
-set	BeamHingeMaterialLevel4Bay2ThetaPc	0.2052;
+set	BeamHingeMaterialLevel4Bay2K0	1145500.0000;
+set	BeamHingeMaterialLevel4Bay2As	0.0356;
+set	BeamHingeMaterialLevel4Bay2My	11200.0000;
+set	BeamHingeMaterialLevel4Bay2Lambda	1.0695;
+set	BeamHingeMaterialLevel4Bay2ThetaP	0.0275;
+set	BeamHingeMaterialLevel4Bay2ThetaPc	0.2006;
 set	BeamHingeMaterialLevel4Bay2Residual	0.4000;
 set	BeamHingeMaterialLevel4Bay2ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel4Bay2Tag	$BeamHingeMaterialLevel4Bay2K0	$n	$BeamHingeMaterialLevel4Bay2As	$BeamHingeMaterialLevel4Bay2My	$BeamHingeMaterialLevel4Bay2Lambda	$BeamHingeMaterialLevel4Bay2ThetaP	$BeamHingeMaterialLevel4Bay2ThetaPc	$BeamHingeMaterialLevel4Bay2Residual	$BeamHingeMaterialLevel4Bay2ThetaU;
 
 # Level4Bay3
 set	BeamHingeMaterialLevel4Bay3Tag	70019;
-set	BeamHingeMaterialLevel4Bay3K0	1943000.0000;
-set	BeamHingeMaterialLevel4Bay3As	0.0320;
-set	BeamHingeMaterialLevel4Bay3My	18500.0000;
-set	BeamHingeMaterialLevel4Bay3Lambda	1.3425;
-set	BeamHingeMaterialLevel4Bay3ThetaP	0.0297;
-set	BeamHingeMaterialLevel4Bay3ThetaPc	0.2052;
+set	BeamHingeMaterialLevel4Bay3K0	1145500.0000;
+set	BeamHingeMaterialLevel4Bay3As	0.0356;
+set	BeamHingeMaterialLevel4Bay3My	11200.0000;
+set	BeamHingeMaterialLevel4Bay3Lambda	1.0695;
+set	BeamHingeMaterialLevel4Bay3ThetaP	0.0275;
+set	BeamHingeMaterialLevel4Bay3ThetaPc	0.2006;
 set	BeamHingeMaterialLevel4Bay3Residual	0.4000;
 set	BeamHingeMaterialLevel4Bay3ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel4Bay3Tag	$BeamHingeMaterialLevel4Bay3K0	$n	$BeamHingeMaterialLevel4Bay3As	$BeamHingeMaterialLevel4Bay3My	$BeamHingeMaterialLevel4Bay3Lambda	$BeamHingeMaterialLevel4Bay3ThetaP	$BeamHingeMaterialLevel4Bay3ThetaPc	$BeamHingeMaterialLevel4Bay3Residual	$BeamHingeMaterialLevel4Bay3ThetaU;
 
 # Level4Bay4
 set	BeamHingeMaterialLevel4Bay4Tag	70020;
-set	BeamHingeMaterialLevel4Bay4K0	1943000.0000;
-set	BeamHingeMaterialLevel4Bay4As	0.0320;
-set	BeamHingeMaterialLevel4Bay4My	18500.0000;
-set	BeamHingeMaterialLevel4Bay4Lambda	1.3425;
-set	BeamHingeMaterialLevel4Bay4ThetaP	0.0297;
-set	BeamHingeMaterialLevel4Bay4ThetaPc	0.2052;
+set	BeamHingeMaterialLevel4Bay4K0	1145500.0000;
+set	BeamHingeMaterialLevel4Bay4As	0.0356;
+set	BeamHingeMaterialLevel4Bay4My	11200.0000;
+set	BeamHingeMaterialLevel4Bay4Lambda	1.0695;
+set	BeamHingeMaterialLevel4Bay4ThetaP	0.0275;
+set	BeamHingeMaterialLevel4Bay4ThetaPc	0.2006;
 set	BeamHingeMaterialLevel4Bay4Residual	0.4000;
 set	BeamHingeMaterialLevel4Bay4ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel4Bay4Tag	$BeamHingeMaterialLevel4Bay4K0	$n	$BeamHingeMaterialLevel4Bay4As	$BeamHingeMaterialLevel4Bay4My	$BeamHingeMaterialLevel4Bay4Lambda	$BeamHingeMaterialLevel4Bay4ThetaP	$BeamHingeMaterialLevel4Bay4ThetaPc	$BeamHingeMaterialLevel4Bay4Residual	$BeamHingeMaterialLevel4Bay4ThetaU;
 
 # Level4Bay5
 set	BeamHingeMaterialLevel4Bay5Tag	70021;
-set	BeamHingeMaterialLevel4Bay5K0	1943000.0000;
-set	BeamHingeMaterialLevel4Bay5As	0.0320;
-set	BeamHingeMaterialLevel4Bay5My	18500.0000;
-set	BeamHingeMaterialLevel4Bay5Lambda	1.3425;
-set	BeamHingeMaterialLevel4Bay5ThetaP	0.0297;
-set	BeamHingeMaterialLevel4Bay5ThetaPc	0.2052;
+set	BeamHingeMaterialLevel4Bay5K0	1145500.0000;
+set	BeamHingeMaterialLevel4Bay5As	0.0356;
+set	BeamHingeMaterialLevel4Bay5My	11200.0000;
+set	BeamHingeMaterialLevel4Bay5Lambda	1.0695;
+set	BeamHingeMaterialLevel4Bay5ThetaP	0.0275;
+set	BeamHingeMaterialLevel4Bay5ThetaPc	0.2006;
 set	BeamHingeMaterialLevel4Bay5Residual	0.4000;
 set	BeamHingeMaterialLevel4Bay5ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel4Bay5Tag	$BeamHingeMaterialLevel4Bay5K0	$n	$BeamHingeMaterialLevel4Bay5As	$BeamHingeMaterialLevel4Bay5My	$BeamHingeMaterialLevel4Bay5Lambda	$BeamHingeMaterialLevel4Bay5ThetaP	$BeamHingeMaterialLevel4Bay5ThetaPc	$BeamHingeMaterialLevel4Bay5Residual	$BeamHingeMaterialLevel4Bay5ThetaU;
 
 # Level4Bay6
 set	BeamHingeMaterialLevel4Bay6Tag	70022;
-set	BeamHingeMaterialLevel4Bay6K0	1943000.0000;
-set	BeamHingeMaterialLevel4Bay6As	0.0320;
-set	BeamHingeMaterialLevel4Bay6My	18500.0000;
-set	BeamHingeMaterialLevel4Bay6Lambda	1.3425;
-set	BeamHingeMaterialLevel4Bay6ThetaP	0.0297;
-set	BeamHingeMaterialLevel4Bay6ThetaPc	0.2052;
+set	BeamHingeMaterialLevel4Bay6K0	1145500.0000;
+set	BeamHingeMaterialLevel4Bay6As	0.0356;
+set	BeamHingeMaterialLevel4Bay6My	11200.0000;
+set	BeamHingeMaterialLevel4Bay6Lambda	1.0695;
+set	BeamHingeMaterialLevel4Bay6ThetaP	0.0275;
+set	BeamHingeMaterialLevel4Bay6ThetaPc	0.2006;
 set	BeamHingeMaterialLevel4Bay6Residual	0.4000;
 set	BeamHingeMaterialLevel4Bay6ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel4Bay6Tag	$BeamHingeMaterialLevel4Bay6K0	$n	$BeamHingeMaterialLevel4Bay6As	$BeamHingeMaterialLevel4Bay6My	$BeamHingeMaterialLevel4Bay6Lambda	$BeamHingeMaterialLevel4Bay6ThetaP	$BeamHingeMaterialLevel4Bay6ThetaPc	$BeamHingeMaterialLevel4Bay6Residual	$BeamHingeMaterialLevel4Bay6ThetaU;
 
 # Level4Bay7
 set	BeamHingeMaterialLevel4Bay7Tag	70023;
-set	BeamHingeMaterialLevel4Bay7K0	1943000.0000;
-set	BeamHingeMaterialLevel4Bay7As	0.0320;
-set	BeamHingeMaterialLevel4Bay7My	18500.0000;
-set	BeamHingeMaterialLevel4Bay7Lambda	1.3425;
-set	BeamHingeMaterialLevel4Bay7ThetaP	0.0297;
-set	BeamHingeMaterialLevel4Bay7ThetaPc	0.2052;
+set	BeamHingeMaterialLevel4Bay7K0	1145500.0000;
+set	BeamHingeMaterialLevel4Bay7As	0.0356;
+set	BeamHingeMaterialLevel4Bay7My	11200.0000;
+set	BeamHingeMaterialLevel4Bay7Lambda	1.0695;
+set	BeamHingeMaterialLevel4Bay7ThetaP	0.0275;
+set	BeamHingeMaterialLevel4Bay7ThetaPc	0.2006;
 set	BeamHingeMaterialLevel4Bay7Residual	0.4000;
 set	BeamHingeMaterialLevel4Bay7ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel4Bay7Tag	$BeamHingeMaterialLevel4Bay7K0	$n	$BeamHingeMaterialLevel4Bay7As	$BeamHingeMaterialLevel4Bay7My	$BeamHingeMaterialLevel4Bay7Lambda	$BeamHingeMaterialLevel4Bay7ThetaP	$BeamHingeMaterialLevel4Bay7ThetaPc	$BeamHingeMaterialLevel4Bay7Residual	$BeamHingeMaterialLevel4Bay7ThetaU;
 
 # Level4Bay8
 set	BeamHingeMaterialLevel4Bay8Tag	70024;
-set	BeamHingeMaterialLevel4Bay8K0	1943000.0000;
-set	BeamHingeMaterialLevel4Bay8As	0.0320;
-set	BeamHingeMaterialLevel4Bay8My	18500.0000;
-set	BeamHingeMaterialLevel4Bay8Lambda	1.3425;
-set	BeamHingeMaterialLevel4Bay8ThetaP	0.0297;
-set	BeamHingeMaterialLevel4Bay8ThetaPc	0.2052;
+set	BeamHingeMaterialLevel4Bay8K0	1145500.0000;
+set	BeamHingeMaterialLevel4Bay8As	0.0356;
+set	BeamHingeMaterialLevel4Bay8My	11200.0000;
+set	BeamHingeMaterialLevel4Bay8Lambda	1.0695;
+set	BeamHingeMaterialLevel4Bay8ThetaP	0.0275;
+set	BeamHingeMaterialLevel4Bay8ThetaPc	0.2006;
 set	BeamHingeMaterialLevel4Bay8Residual	0.4000;
 set	BeamHingeMaterialLevel4Bay8ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel4Bay8Tag	$BeamHingeMaterialLevel4Bay8K0	$n	$BeamHingeMaterialLevel4Bay8As	$BeamHingeMaterialLevel4Bay8My	$BeamHingeMaterialLevel4Bay8Lambda	$BeamHingeMaterialLevel4Bay8ThetaP	$BeamHingeMaterialLevel4Bay8ThetaPc	$BeamHingeMaterialLevel4Bay8Residual	$BeamHingeMaterialLevel4Bay8ThetaU;
 
 # Level5Bay1
 set	BeamHingeMaterialLevel5Bay1Tag	70025;
-set	BeamHingeMaterialLevel5Bay1K0	1943000.0000;
-set	BeamHingeMaterialLevel5Bay1As	0.0320;
-set	BeamHingeMaterialLevel5Bay1My	18500.0000;
-set	BeamHingeMaterialLevel5Bay1Lambda	1.3425;
-set	BeamHingeMaterialLevel5Bay1ThetaP	0.0297;
-set	BeamHingeMaterialLevel5Bay1ThetaPc	0.2052;
+set	BeamHingeMaterialLevel5Bay1K0	1145500.0000;
+set	BeamHingeMaterialLevel5Bay1As	0.0356;
+set	BeamHingeMaterialLevel5Bay1My	11200.0000;
+set	BeamHingeMaterialLevel5Bay1Lambda	1.0695;
+set	BeamHingeMaterialLevel5Bay1ThetaP	0.0275;
+set	BeamHingeMaterialLevel5Bay1ThetaPc	0.2006;
 set	BeamHingeMaterialLevel5Bay1Residual	0.4000;
 set	BeamHingeMaterialLevel5Bay1ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel5Bay1Tag	$BeamHingeMaterialLevel5Bay1K0	$n	$BeamHingeMaterialLevel5Bay1As	$BeamHingeMaterialLevel5Bay1My	$BeamHingeMaterialLevel5Bay1Lambda	$BeamHingeMaterialLevel5Bay1ThetaP	$BeamHingeMaterialLevel5Bay1ThetaPc	$BeamHingeMaterialLevel5Bay1Residual	$BeamHingeMaterialLevel5Bay1ThetaU;
 
 # Level5Bay2
 set	BeamHingeMaterialLevel5Bay2Tag	70026;
-set	BeamHingeMaterialLevel5Bay2K0	1943000.0000;
-set	BeamHingeMaterialLevel5Bay2As	0.0320;
-set	BeamHingeMaterialLevel5Bay2My	18500.0000;
-set	BeamHingeMaterialLevel5Bay2Lambda	1.3425;
-set	BeamHingeMaterialLevel5Bay2ThetaP	0.0297;
-set	BeamHingeMaterialLevel5Bay2ThetaPc	0.2052;
+set	BeamHingeMaterialLevel5Bay2K0	1145500.0000;
+set	BeamHingeMaterialLevel5Bay2As	0.0356;
+set	BeamHingeMaterialLevel5Bay2My	11200.0000;
+set	BeamHingeMaterialLevel5Bay2Lambda	1.0695;
+set	BeamHingeMaterialLevel5Bay2ThetaP	0.0275;
+set	BeamHingeMaterialLevel5Bay2ThetaPc	0.2006;
 set	BeamHingeMaterialLevel5Bay2Residual	0.4000;
 set	BeamHingeMaterialLevel5Bay2ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel5Bay2Tag	$BeamHingeMaterialLevel5Bay2K0	$n	$BeamHingeMaterialLevel5Bay2As	$BeamHingeMaterialLevel5Bay2My	$BeamHingeMaterialLevel5Bay2Lambda	$BeamHingeMaterialLevel5Bay2ThetaP	$BeamHingeMaterialLevel5Bay2ThetaPc	$BeamHingeMaterialLevel5Bay2Residual	$BeamHingeMaterialLevel5Bay2ThetaU;
 
 # Level5Bay3
 set	BeamHingeMaterialLevel5Bay3Tag	70027;
-set	BeamHingeMaterialLevel5Bay3K0	1943000.0000;
-set	BeamHingeMaterialLevel5Bay3As	0.0320;
-set	BeamHingeMaterialLevel5Bay3My	18500.0000;
-set	BeamHingeMaterialLevel5Bay3Lambda	1.3425;
-set	BeamHingeMaterialLevel5Bay3ThetaP	0.0297;
-set	BeamHingeMaterialLevel5Bay3ThetaPc	0.2052;
+set	BeamHingeMaterialLevel5Bay3K0	1145500.0000;
+set	BeamHingeMaterialLevel5Bay3As	0.0356;
+set	BeamHingeMaterialLevel5Bay3My	11200.0000;
+set	BeamHingeMaterialLevel5Bay3Lambda	1.0695;
+set	BeamHingeMaterialLevel5Bay3ThetaP	0.0275;
+set	BeamHingeMaterialLevel5Bay3ThetaPc	0.2006;
 set	BeamHingeMaterialLevel5Bay3Residual	0.4000;
 set	BeamHingeMaterialLevel5Bay3ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel5Bay3Tag	$BeamHingeMaterialLevel5Bay3K0	$n	$BeamHingeMaterialLevel5Bay3As	$BeamHingeMaterialLevel5Bay3My	$BeamHingeMaterialLevel5Bay3Lambda	$BeamHingeMaterialLevel5Bay3ThetaP	$BeamHingeMaterialLevel5Bay3ThetaPc	$BeamHingeMaterialLevel5Bay3Residual	$BeamHingeMaterialLevel5Bay3ThetaU;
 
 # Level5Bay4
 set	BeamHingeMaterialLevel5Bay4Tag	70028;
-set	BeamHingeMaterialLevel5Bay4K0	1943000.0000;
-set	BeamHingeMaterialLevel5Bay4As	0.0320;
-set	BeamHingeMaterialLevel5Bay4My	18500.0000;
-set	BeamHingeMaterialLevel5Bay4Lambda	1.3425;
-set	BeamHingeMaterialLevel5Bay4ThetaP	0.0297;
-set	BeamHingeMaterialLevel5Bay4ThetaPc	0.2052;
+set	BeamHingeMaterialLevel5Bay4K0	1145500.0000;
+set	BeamHingeMaterialLevel5Bay4As	0.0356;
+set	BeamHingeMaterialLevel5Bay4My	11200.0000;
+set	BeamHingeMaterialLevel5Bay4Lambda	1.0695;
+set	BeamHingeMaterialLevel5Bay4ThetaP	0.0275;
+set	BeamHingeMaterialLevel5Bay4ThetaPc	0.2006;
 set	BeamHingeMaterialLevel5Bay4Residual	0.4000;
 set	BeamHingeMaterialLevel5Bay4ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel5Bay4Tag	$BeamHingeMaterialLevel5Bay4K0	$n	$BeamHingeMaterialLevel5Bay4As	$BeamHingeMaterialLevel5Bay4My	$BeamHingeMaterialLevel5Bay4Lambda	$BeamHingeMaterialLevel5Bay4ThetaP	$BeamHingeMaterialLevel5Bay4ThetaPc	$BeamHingeMaterialLevel5Bay4Residual	$BeamHingeMaterialLevel5Bay4ThetaU;
 
 # Level5Bay5
 set	BeamHingeMaterialLevel5Bay5Tag	70029;
-set	BeamHingeMaterialLevel5Bay5K0	1943000.0000;
-set	BeamHingeMaterialLevel5Bay5As	0.0320;
-set	BeamHingeMaterialLevel5Bay5My	18500.0000;
-set	BeamHingeMaterialLevel5Bay5Lambda	1.3425;
-set	BeamHingeMaterialLevel5Bay5ThetaP	0.0297;
-set	BeamHingeMaterialLevel5Bay5ThetaPc	0.2052;
+set	BeamHingeMaterialLevel5Bay5K0	1145500.0000;
+set	BeamHingeMaterialLevel5Bay5As	0.0356;
+set	BeamHingeMaterialLevel5Bay5My	11200.0000;
+set	BeamHingeMaterialLevel5Bay5Lambda	1.0695;
+set	BeamHingeMaterialLevel5Bay5ThetaP	0.0275;
+set	BeamHingeMaterialLevel5Bay5ThetaPc	0.2006;
 set	BeamHingeMaterialLevel5Bay5Residual	0.4000;
 set	BeamHingeMaterialLevel5Bay5ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel5Bay5Tag	$BeamHingeMaterialLevel5Bay5K0	$n	$BeamHingeMaterialLevel5Bay5As	$BeamHingeMaterialLevel5Bay5My	$BeamHingeMaterialLevel5Bay5Lambda	$BeamHingeMaterialLevel5Bay5ThetaP	$BeamHingeMaterialLevel5Bay5ThetaPc	$BeamHingeMaterialLevel5Bay5Residual	$BeamHingeMaterialLevel5Bay5ThetaU;
 
 # Level5Bay6
 set	BeamHingeMaterialLevel5Bay6Tag	70030;
-set	BeamHingeMaterialLevel5Bay6K0	1943000.0000;
-set	BeamHingeMaterialLevel5Bay6As	0.0320;
-set	BeamHingeMaterialLevel5Bay6My	18500.0000;
-set	BeamHingeMaterialLevel5Bay6Lambda	1.3425;
-set	BeamHingeMaterialLevel5Bay6ThetaP	0.0297;
-set	BeamHingeMaterialLevel5Bay6ThetaPc	0.2052;
+set	BeamHingeMaterialLevel5Bay6K0	1145500.0000;
+set	BeamHingeMaterialLevel5Bay6As	0.0356;
+set	BeamHingeMaterialLevel5Bay6My	11200.0000;
+set	BeamHingeMaterialLevel5Bay6Lambda	1.0695;
+set	BeamHingeMaterialLevel5Bay6ThetaP	0.0275;
+set	BeamHingeMaterialLevel5Bay6ThetaPc	0.2006;
 set	BeamHingeMaterialLevel5Bay6Residual	0.4000;
 set	BeamHingeMaterialLevel5Bay6ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel5Bay6Tag	$BeamHingeMaterialLevel5Bay6K0	$n	$BeamHingeMaterialLevel5Bay6As	$BeamHingeMaterialLevel5Bay6My	$BeamHingeMaterialLevel5Bay6Lambda	$BeamHingeMaterialLevel5Bay6ThetaP	$BeamHingeMaterialLevel5Bay6ThetaPc	$BeamHingeMaterialLevel5Bay6Residual	$BeamHingeMaterialLevel5Bay6ThetaU;
 
 # Level5Bay7
 set	BeamHingeMaterialLevel5Bay7Tag	70031;
-set	BeamHingeMaterialLevel5Bay7K0	1943000.0000;
-set	BeamHingeMaterialLevel5Bay7As	0.0320;
-set	BeamHingeMaterialLevel5Bay7My	18500.0000;
-set	BeamHingeMaterialLevel5Bay7Lambda	1.3425;
-set	BeamHingeMaterialLevel5Bay7ThetaP	0.0297;
-set	BeamHingeMaterialLevel5Bay7ThetaPc	0.2052;
+set	BeamHingeMaterialLevel5Bay7K0	1145500.0000;
+set	BeamHingeMaterialLevel5Bay7As	0.0356;
+set	BeamHingeMaterialLevel5Bay7My	11200.0000;
+set	BeamHingeMaterialLevel5Bay7Lambda	1.0695;
+set	BeamHingeMaterialLevel5Bay7ThetaP	0.0275;
+set	BeamHingeMaterialLevel5Bay7ThetaPc	0.2006;
 set	BeamHingeMaterialLevel5Bay7Residual	0.4000;
 set	BeamHingeMaterialLevel5Bay7ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel5Bay7Tag	$BeamHingeMaterialLevel5Bay7K0	$n	$BeamHingeMaterialLevel5Bay7As	$BeamHingeMaterialLevel5Bay7My	$BeamHingeMaterialLevel5Bay7Lambda	$BeamHingeMaterialLevel5Bay7ThetaP	$BeamHingeMaterialLevel5Bay7ThetaPc	$BeamHingeMaterialLevel5Bay7Residual	$BeamHingeMaterialLevel5Bay7ThetaU;
 
 # Level5Bay8
 set	BeamHingeMaterialLevel5Bay8Tag	70032;
-set	BeamHingeMaterialLevel5Bay8K0	1943000.0000;
-set	BeamHingeMaterialLevel5Bay8As	0.0320;
-set	BeamHingeMaterialLevel5Bay8My	18500.0000;
-set	BeamHingeMaterialLevel5Bay8Lambda	1.3425;
-set	BeamHingeMaterialLevel5Bay8ThetaP	0.0297;
-set	BeamHingeMaterialLevel5Bay8ThetaPc	0.2052;
+set	BeamHingeMaterialLevel5Bay8K0	1145500.0000;
+set	BeamHingeMaterialLevel5Bay8As	0.0356;
+set	BeamHingeMaterialLevel5Bay8My	11200.0000;
+set	BeamHingeMaterialLevel5Bay8Lambda	1.0695;
+set	BeamHingeMaterialLevel5Bay8ThetaP	0.0275;
+set	BeamHingeMaterialLevel5Bay8ThetaPc	0.2006;
 set	BeamHingeMaterialLevel5Bay8Residual	0.4000;
 set	BeamHingeMaterialLevel5Bay8ThetaU	0.2000;
 CreateIMKMaterial	$BeamHingeMaterialLevel5Bay8Tag	$BeamHingeMaterialLevel5Bay8K0	$n	$BeamHingeMaterialLevel5Bay8As	$BeamHingeMaterialLevel5Bay8My	$BeamHingeMaterialLevel5Bay8Lambda	$BeamHingeMaterialLevel5Bay8ThetaP	$BeamHingeMaterialLevel5Bay8ThetaPc	$BeamHingeMaterialLevel5Bay8Residual	$BeamHingeMaterialLevel5Bay8ThetaU;
