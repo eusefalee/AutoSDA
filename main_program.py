@@ -66,6 +66,11 @@ def AutoSDA_main(id):
     # Create necessary building files and subdirectories
     writeFiles(currentBuilding,seismicParams)
 
+    # Select ground motions to be applied
+    selectedGMsstr = currentBuilding['GMs'].item().split(",")
+    selectedGMs = [int(x) for x in selectedGMsstr]
+    selectGroundMotions(selectedGMs,currentBuilding['LFRS'].item())
+
     # Run design and analysis for current building
     runSDA(currentBuilding['LFRS'].item(),id)
 

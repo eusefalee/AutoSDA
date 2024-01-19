@@ -38,6 +38,14 @@ def run_dynamic_analysis_using_MP(base_directory, IDA_scales, building_id, SaMCE
     old_string = '**SaMCEFactor**'
     new_string = str(SaMCE_factor)
     new_content = new_content.replace(old_string, new_string)
+
+    #Revise Number of GMs
+    countpath = target_dir / 'Histories'
+    ngms = len([entry for entry in os.listdir(countpath) if os.path.isfile(os.path.join(countpath, entry))])
+    old_string = '**nGMs**'
+    new_string = str(ngms)
+    new_content = new_content.replace(old_string,new_string)
+    
     with open('RunDynamicAnalysisUsingMP.tcl', 'w') as file:
         file.write(new_content)
     # Run the dynamic analysis using OpenSeesMP (Change the number of cores that you need in the following line)

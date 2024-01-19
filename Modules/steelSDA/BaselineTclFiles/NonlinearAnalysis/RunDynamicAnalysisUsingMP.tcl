@@ -18,7 +18,7 @@ set allScales **intensityScales**;
 set MCEScaleFactor **SaMCEFactor**;
 
 # Define the total number of ground motions
-set numGMs 1;
+set numGMs **nGMs**;
 
 # Define the total number of models for dynamic analysis
 set numModels 1;
@@ -40,11 +40,12 @@ set np [getNP];  # Getting the number of processors
 set pid [getPID];  # Getting the processor ID number
 
 # Setting up a vector of ground motion IDs
-set groundMotionIDs {}; 
-set numberOfGroundMotionIDs $numGMs; 
-for {set gm 1} {$gm <= $numberOfGroundMotionIDs} {incr gm} {
-	lappend groundMotionIDs $gm
-}
+set groundMotionIDs **gmIDs**
+# set groundMotionIDs {}; 
+# set numberOfGroundMotionIDs $numGMs; 
+# for {set gm 1} {$gm <= $numberOfGroundMotionIDs} {incr gm} {
+	# lappend groundMotionIDs $gm
+# }
 puts "Ground motion ID's defined"
 
 # Setting up a vector with the number of steps in each ground motion record

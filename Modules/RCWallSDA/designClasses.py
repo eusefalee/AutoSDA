@@ -1101,7 +1101,8 @@ class ElasticAnalysis(ELF,AccParam):
         self.define_variables()
         # path = Path(baseDirectory,"..","..","OpenSees","bin","OpenSees")
         # os.system(baseDirectory + ' OpenSees Model.tcl')
-        subprocess.call([Path('..','..','OpenSees','bin','OpenSees'), 'Model.tcl'])
+        # subprocess.call([Path('..','..','OpenSees','bin','OpenSees'), 'Model.tcl'])
+        os.system('C:\\OpenSees\\bin\\OpenSees Model.tcl')
 
 
     def drift_demand(self):

@@ -2,4 +2,4 @@ venv/
 Templates/woodSDAtestinput.txt
 OpenSees/
 Modules/steelSDA_old
-Modules/Outputs
+Outputs/
