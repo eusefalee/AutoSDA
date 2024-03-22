@@ -10,12 +10,16 @@ Modules/steelSDA/AccelerationSpectra5percent.csv
 Modules/steelSDA/AccelerationSpcetra5percent - Copy.csv
 Modules/steelSDA/venv/
 Modules/steelSDA/BuildingNonlinearModels/
+!*/Modules/steelSDA/BuildingNonlinearModels/RunDynamicAnalysisUsingMP.tcl
 Modules/steelSDA/BuildingElasticModels/
+!*/Modules/steelSDA/BuildingElasticModels/C1-04-RCIV-ELF/*
 Modules/steelSDA/autosdaenv
 Modules/steelSDA/BuildingData/
+!Modules/steelSDA/BuildingData/Read Me.txt
+!*/Modules/steelSDA/BuildingData/Building ID explanation.txt
 Modules/woodSDA/BuildingModels/
-Modules/woodSDA/BuildingModels/
-Modules/woodSDA/BuildingModels/
+!*/Modules/woodSDA/BuildingModels/RunDynamic.tcl
+!*/Modules/woodSDA/BuildingModels/GM_sets/BoelterHall_original/*
 GMs/GroundMotionInfo/
 GMs/Histories/
 Outputs - Copy/
