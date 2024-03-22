@@ -88,7 +88,7 @@ def run_woodSDA(ID):
     numwallpath = Path(basedirectory,'Geometry','numberOfWallsPerLine.txt')
 
     with open(numstorpath) as n, open(wallnamepath) as w, open(numwallpath) as nw, open(direction) as d:
-        numFloors = n.read()
+        numFloors = int(n.read())
         direction = d.read().split("\n")
         wall_line_name = w.read().split("\n")
         nwPerLine = nw.read().split("\n")
@@ -144,8 +144,10 @@ def run_woodSDA(ID):
 
 ################## Dynamic Analysis ############################
     ### MSA using selected GM records for 5 hazard levels. Location: Boelter Hall
-    Scale_Sa_GM = '0.403 0.975 1.307 1.676 2.237'
-    GM_Num = '50 47 47 48 47'
+    # Scale_Sa_GM = '0.403 0.975 1.307 1.676 2.237'
+    Scale_Sa_GM = '0.403'
+    # GM_Num = '50 47 47 48 47'
+    GM_Num = '5'
 
     # GM_ID = 1 # GM pair
     GM_folder = r'GM_sets/BoelterHall'
@@ -155,7 +157,7 @@ def run_woodSDA(ID):
     # start_ID is tarting index which starts from 1 instead of 0
     # finish_ID is the total number of GMs in multiple stripe or incremental dynamic analysis
     # for eg: if you have 10 hazard levels with 22 GM pairs, finish_id should be 10*22 + 1
-    start_ID, finish_ID = 1, 3 # for demonstration I'm running dynamic analysis for 2 ground motion pairs
+    start_ID, finish_ID = 1, 5 # one ground motion pair
     acc_time = 0
     start_time = time.time()
 
@@ -200,20 +202,32 @@ def run_woodSDA(ID):
     print('The total runtime is %.3f minutes' %(int(finish_time-start_time)/60))
 
     ############### Post-Process Dynamic Analysis ###################
-    # NumGM = np.array([50, 47, 47, 48, 47])
 
-    # CollapseCriteria = 0.1
-    # DemolitionCriteria = 0.01
+    res = [int(ele) for ele in GM_Num.split()]
+    NumGM = np.array(res)
+
+    CollapseCriteria = 0.1
+    DemolitionCriteria = 0.01
 
     # HazardLevel = np.array([0.403, 0.975, 1.307, 1.676, 2.237])
+    HazardLevel = np.array([0.403])
 
-    # dynamicDirectory = os.path.join(cwd, *['BuildingModels',BuildingList[0],'DynamicAnalysis'])
+    dynamicDirectory = os.path.join(cwd, *['BuildingModels',BuildingList[0],'DynamicAnalysis'])
 
-    # sdr = extractedps.ExtractSDR(dynamicDirectory, HazardLevel, NumGM, numFloors)
-    # rdr = extractedps.ExtractRDR(dynamicDirectory, HazardLevel, NumGM, NumStory)
+    sdr = extractedps.ExtractSDR(dynamicDirectory, HazardLevel, NumGM, numFloors)
+    rdr = extractedps.ExtractRDR(dynamicDirectory, HazardLevel, NumGM, numFloors)
     # gmDirectory = r'C:\Users\Laxman\Desktop\Python Tool\BuildingModels\GM_sets\BoelterHall'
-    # PGA = extractedps.ExtractPGA(gmDirectory, HazardLevel, NumGM)
-    # pfa = extractedps.ExtractPFA(dynamicDirectory, HazardLevel, NumGM, NumStory, PGA, g = 386.4)
+    gmDirectory = Path(cwd,"BuildingModels","GM_sets","BoelterHall")
+    PGA = extractedps.ExtractPGA(gmDirectory, HazardLevel, NumGM)
+    pfa = extractedps.ExtractPFA(dynamicDirectory, HazardLevel, NumGM, numFloors, PGA, g = 386.4)
+
+    # Output drifts and accelerations to csv files in results folder
+    pfa.to_csv(Path(resultDirectory, "PFA.csv"))
+    rdr.to_csv(Path(resultDirectory, "RDR.csv"))
+    sdr.to_csv(Path(resultDirectory, "SDR.csv"))
+
+
+
 
 
 if __name__ == "__main__":

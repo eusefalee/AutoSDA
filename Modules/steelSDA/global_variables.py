@@ -137,12 +137,16 @@ else:
 # #########################################################################
 
 # Global constant: ACCELERATION_SPECTRUM: 5% spectral acceleration for a set of ground motions
-ACCELERATION_SPECTRUM = pd.read_csv('AccelerationSpcetra5Percent.csv', header=0)
+ACCELERATION_SPECTRUM = pd.read_csv('AccelerationSpectra5Percent.csv', header=0)
 
 # Global constant: used for specifying the IDA scales in RunDynamicAnalysisUsingMP.tcl file
 # IDA_SCALES = [25, 50, 75, 100, 125, 150, 175, 200, 225, 250]
-IDA_SCALES = [100, 150, 200, 250]
+# IDA_SCALES = [100, 150, 200, 250]
+IDA_SCALES = [100]
 
 # Define the IDs used for label the ground motions
 # GM_IDs = range(1, 44+1)
-GM_IDs = [1]
+from pathlib import Path
+path = Path(base_directory,"BuildingNonlinearModels","Histories")
+files = [os.path.splitext(filename)[0] for filename in os.listdir(path)]
+GM_IDs = range(1,len(files)+1)

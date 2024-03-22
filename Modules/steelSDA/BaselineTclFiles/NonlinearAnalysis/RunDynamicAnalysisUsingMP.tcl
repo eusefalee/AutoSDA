@@ -41,11 +41,11 @@ set pid [getPID];  # Getting the processor ID number
 
 # Setting up a vector of ground motion IDs
 set groundMotionIDs **gmIDs**
-# set groundMotionIDs {}; 
-# set numberOfGroundMotionIDs $numGMs; 
-# for {set gm 1} {$gm <= $numberOfGroundMotionIDs} {incr gm} {
-	# lappend groundMotionIDs $gm
-# }
+set groundMotionIDs {}; 
+set numberOfGroundMotionIDs $numGMs; 
+for {set gm 1} {$gm <= $numberOfGroundMotionIDs} {incr gm} {
+	lappend groundMotionIDs $gm
+}
 puts "Ground motion ID's defined"
 
 # Setting up a vector with the number of steps in each ground motion record

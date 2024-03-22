@@ -14,11 +14,12 @@ from help_functions import *
 import multiprocessing as mp
 
 
+
 ########## OPTIONAL USER INPUTS #############
 
 # Specify numer of processors to use
 # To use the total number of processors on your machine use numProcessors = mp.cpu_count()
-numProcessors = mp.cpu_count()
+numProcessors = 5
 
 # Clean the module subdirectories after running a building. The output files
 # for each building are copied to the "Outputs" folder in the top-level, so the subdirectory 
@@ -67,9 +68,33 @@ def AutoSDA_main(id):
     writeFiles(currentBuilding,seismicParams)
 
     # Select ground motions to be applied
-    selectedGMsstr = currentBuilding['GMs'].item().split(",")
-    selectedGMs = [int(x) for x in selectedGMsstr]
-    selectGroundMotions(selectedGMs,currentBuilding['LFRS'].item())
+    print("getting GMs")
+    if not pd.isna(currentBuilding['Name'].item()):
+        eventCodes = pd.read_excel(Path("GMs", "GM_Labels.xlsx"))
+        event = currentBuilding["Name"].item()
+
+        if event == "All":
+
+            selectedGMsstr = []
+
+            # loop to append all events to the ground motion string
+            for i in range(len(eventCodes)):
+                eventID = eventCodes["ID"].iloc[i]
+                selectedGMsstr.extend(list(range(eventID+1,eventID+6)))
+        else:
+            print(event)
+            eventID = eventCodes.loc[eventCodes["Event"] == event]["ID"].item()
+            print(eventID)
+            selectedGMsstr = list(range(eventID+1,eventID+6))
+        print(selectedGMsstr)
+    else:
+
+        gmids = str(currentBuilding['GMs'].item())
+
+        selectedGMsstr = gmids.split(",") if "," in gmids else [gmids]
+    print(selectedGMsstr)
+    # selectedGMs = [int(x) for x in selectedGMsstr]
+    selectGroundMotions(selectedGMsstr,currentBuilding['LFRS'].item())
 
     # Run design and analysis for current building
     runSDA(currentBuilding['LFRS'].item(),id)

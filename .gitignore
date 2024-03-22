@@ -1,5 +1,21 @@
 venv/
+BuildingInfo/
 Templates/woodSDAtestinput.txt
 OpenSees/
-Modules/steelSDA_old
+Modules/steelSDA_old/
 Outputs/
+Modules/steelSDA/Outputs/
+Modules/steelSDA/Outputs - Copy/
+Modules/steelSDA/AccelerationSpectra5percent.csv
+Modules/steelSDA/AccelerationSpcetra5percent - Copy.csv
+Modules/steelSDA/venv/
+Modules/steelSDA/BuildingNonlinearModels/
+Modules/steelSDA/BuildingElasticModels/
+Modules/steelSDA/autosdaenv
+Modules/steelSDA/BuildingData/
+Modules/woodSDA/BuildingModels/
+Modules/woodSDA/BuildingModels/
+Modules/woodSDA/BuildingModels/
+GMs/GroundMotionInfo/
+GMs/Histories/
+Outputs - Copy/

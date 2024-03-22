@@ -9,6 +9,7 @@ from pathlib import Path
 import os
 from subprocess import run
 import shutil
+from operator import itemgetter
 import glob
 
 # Define top level directory
@@ -25,6 +26,7 @@ def onlineParamLookup(latitude,longitude,siteClass,riskCat):
 
     # Use Chrome to access web
     options = webdriver.ChromeOptions()
+    options.add_experimental_option("detach",True)
     options.add_argument('headless') # navigate website in background w/o opening a window
     driver = webdriver.Chrome(ChromeDriverManager().install(),options=options)
     
@@ -44,6 +46,7 @@ def onlineParamLookup(latitude,longitude,siteClass,riskCat):
     siteClassSelector = Select(driver.find_element(By.ID,'site-class'))
     siteClassSelector.select_by_value(siteClass)
 
+    print("asce, cat, and site class input")
     # Choose to search by coordinates
     searchTypeButton=driver.find_element(By.XPATH,
     "//label[@class='btn btn-secondary']")
@@ -57,12 +60,12 @@ def onlineParamLookup(latitude,longitude,siteClass,riskCat):
     lonCoord = driver.find_element(By.XPATH,
     "//input[@class='form-control input-group input-coords input-longitude']")
     lonCoord.send_keys(longitude)
-
+    print("coordinates defined")
     # Click "Go"
     goButton = driver.find_element(By.XPATH,
     "//button[@class='btn btn-primary searchbutton']")
     goButton.click()
-
+    print("Go button clicked")
     # Fetch the resulting tables
     tables = WebDriverWait(driver, 3).until(EC.presence_of_all_elements_located(
         (By.CLASS_NAME, "table")))
@@ -170,7 +173,7 @@ def writeFiles(buildingData, seismicParams):
 
         # Copy the entire input folder from the top level building info directory to the woodSDA building info
         shutil.copytree(topLevelFolder,mainPath,dirs_exist_ok=True)
-        os.chdir(mainPath)
+        # os.chdir(mainPath)
 
     elif buildingData['LFRS'].item() == 'rcwall':
         filePath = Path(
@@ -199,105 +202,26 @@ def writeFiles(buildingData, seismicParams):
     # Return to main directory
     os.chdir(topLevelDirectory)
 
+    print("exiting write files function")
 
 
-# def selectGroundMotions(GMIDs,lfrsType):
-#     """
-#     Function to select and apply user specified ground motions to model
-#     """
 
-#     # Should the IDA scales match for each module?
-
-#     # Locate master ground motion folder
-#     allGMsFolder = Path("GMs")
-#     allHistories = Path(allGMsFolder, "Histories")
-#     allInfo = Path(allGMsFolder,"GroundMotionInfo") 
-    
-#     # Initialize variables to store GMInfo
-#     GMFileNames = []
-#     GMNumPoints = []
-#     GMTimeSteps = []
-
-#     # GM source files from top level directory
-#     srcfile = Path(allHistories, str(GMIDs[newid]) + ".txt")
-#     numpointsFile = open(Path(allInfo, "GMNumPoints.txt"))
-#     timeStepsFile = open(Path(allInfo, "GMTimeSteps.txt"))
-
-
-#     # steelSDA
-#     if lfrsType == 'steelmf':
-
-#         steelHistories = Path("Modules","steelSDA","BuildingNonlinearModels","Histories")
-#         steelInfo = Path("Modules","steelSDA","BuildingNonlinearModels","GoundMotionInfo")
-
-#         # Deleting the previous history files
-#         files = glob.glob(steelHistories + '/*')
-    
-#         for f in files:os.remove(f)
-
-#         # Get the GM IDs from main input excel file
-#         newid = 0 # Assigns new IDs in ascending order to the selected ground motions
-#         for id in GMIDs:
-
-#             # Copy Histories and rename/reindex
-#             dstfile = Path(steelHistories, str(newid) + ".txt")
-#             shutil.copy2(srcfile,dstfile)
-
-#             # Get NumPoints and TimeSteps for current GM            
-#             numpoints = numpointsFile.read(id)
-#             timesteps = timeStepsFile.read(id)
-
-#             # Create lists for writing to GMInfo files
-#             GMFileNames.append(newid)
-#             GMTimeSteps.append(timesteps)
-#             GMNumPoints.append(numpoints)
-
-#             newid += 1
-        
-#         # Write to GMInfo files
-#         with open(Path(steelInfo, "GMNumPoints.txt"),'w') as f, open(Path(steelInfo, "GMTimeSteps.txt"),'w') as g:
-#             f.write(GMNumPoints)
-#             g.write(GMTimeSteps)
-
-#             # OR change the code to use an array of IDs
-    
-#     # woodSDA
-#     if lfrsType == 'woodframe':
-
-#         woodHistories = Path("Modules","woodSDA","BuildingNonlinearModels","Histories")
-#         woodInfo = Path("Modules","woodSDA","BuildingNonlinearModels","GoundMotionInfo")
-
-#         files = glob.glob(woodHistories + '/*')
-
-#         dstfile = Path(woodHistories, str(newid) + ".txt")
-#         shutil.copy2(srcfile,dstfile) 
-
-#         # Deleting the previous history files
-#         files = glob.glob(steelHistories + '/*')
-    
-#         for f in files:os.remove(f)
-
-#         # Get the GM IDs from main input excel file
-#         newid = 0 # Assigns new IDs in ascending order to the selected ground motions       
-#         pass
-
-#         # May need a similar process to steelSDA. Either assign new IDs or rewrite code
-
-#     if lfrsType == 'rcwall':
-#         pass
-#         # rcwallSDA
-#         # May be okay. Can use as template for other two modules.
-#         # May only need to modify the scales
-
-#     pass
-
-def selectGroundMotions(GMIDs,lfrsType):
+def selectGroundMotions(GMIDs,lfrsType,event = None):
     """
     Function to select and apply user specified ground motions to model
     """
 
     # Should the IDA scales match for each module?
     print("Enter GM function")
+
+    # Applying both directions of ground motion loading
+    oldIDlist = [] # Modifies old id list 
+    for ele in GMIDs: 
+        oldIDlist.extend([str(ele) + "h1",str(ele) + "h2"])
+
+    GMIDs = oldIDlist.copy()
+    print(GMIDs)
+    newid = range(len(GMIDs)) # Assigns new IDs in ascending order to the selected ground motions
 
     # Locate master ground motion folder
     allGMsFolder = Path(topLevelDirectory,"GMs")
@@ -315,57 +239,99 @@ def selectGroundMotions(GMIDs,lfrsType):
     # GM source files from top level directory
     numpointsFile = open(Path(allInfo, "GMNumPoints.txt"))
     timeStepsFile = open(Path(allInfo, "GMTimeSteps.txt"))
+    gmFileNamesFile = open(Path(allInfo, "GMFileNames.txt"))
+
+    # GM dest file names for steelSDA and woodSDA
+    fileNames = ["GMNumPoints.txt","GMTimeSteps.txt","GMFileNames.txt"]
 
      # Get NumPoints and TimeSteps          
     numpoints = numpointsFile.read().split('\n')
     timesteps = timeStepsFile.read().split('\n')
+    gmfilenames = gmFileNamesFile.read().split('\n')
+
+    # Include only values corresponding to selected GMs
+    idx = [gmfilenames.index(ele +'.txt') for ele in GMIDs]
+    numpoints = list(itemgetter(*idx)(numpoints))
+    timesteps = list(itemgetter(*idx)(timesteps))
+
     numpointsFile.close()
     timeStepsFile.close()
+    gmFileNamesFile.close()
 
     print("Source files defined")
+
+
+
     # Select path to copy GM files to based on LFRS-type
     # steelSDA
     if lfrsType == 'steelmf':
 
-        print("Steel directories defined")
         dstHistories = Path(topLevelDirectory,"Modules","steelSDA","BuildingNonlinearModels","Histories")
         dstInfo = Path(topLevelDirectory,"Modules","steelSDA","BuildingNonlinearModels","GroundMotionInfo")
-    
+
+        # Get the appropriate acceleration spectra 
+        getIDs = GMIDs.copy()
+        getIDs.insert(0,'Period (s)')
+        print(getIDs)
+        spectra = pd.read_csv(Path(allGMsFolder,"AccelerationSpectra5Percent.csv"))[getIDs]
+
+        # Output to AccelerationSpectra5Percent file in steelSDA
+        spectra.to_csv(Path(topLevelDirectory,"Modules","steelSDA","AccelerationSpectra5Percent.csv"),index=False)
+
+
     # woodSDA
     elif lfrsType == 'woodframe':
 
-        dstHistories = Path(topLevelDirectory,"Modules","woodSDA","BuildingModels","GM_sets","Histories")
-        dstInfo = Path(topLevelDirectory,"Modules","woodSDA","BuildingModels","GM_sets","GroundMotionInfo")
+        dstHistories = Path(topLevelDirectory,"Modules","woodSDA","BuildingModels","GM_sets","BoelterHall","1","histories")
+        dstInfo = Path(topLevelDirectory,"Modules","woodSDA","BuildingModels","GM_sets","BoelterHall","1","GroundMotionInfo")
+        
+        # # Accounting for bidirectional loading in woodSDA
+        # newid = [] # Modifies newid names to include directions h1 and h2
+        newid = GMIDs.copy()
+        # # oldIDlist = [] # Modifies old id list 
+        # for ele in GMIDs: 
+        # #     oldIDlist.exetend([str(ele),str(ele)]) # old GMIDs list is extended to have a duplicate of each ground motion ID
+        #     newid.extend([ele,ele])
+        # GMIDs = oldIDlist.copy()
 
+    # RCWallSDA
     elif lfrsType == 'rcwall':
-        pass
-        # rcwallSDA
-        # May be okay. Can use as template for other two modules.
-        # May only need to modify the scales
+
+        dstHistories = Path(topLevelDirectory,"Modules","RCWallSDA","Nonlinear analysis","GMfiles")
+        dstInfo = Path(topLevelDirectory,"Modules","RCWallSDA","Nonlinear analysis")
+
+        # dest filenames for RCWallSDA
+        fileNames = ["allGMnumOfSteps.txt","allGMdt.txt","allGMname.txt"]
+
+        # Need to include scale factors file
     
     # Deleting the previous history files
     [f.unlink() for f in Path(dstHistories).glob("*") if f.is_file()] 
     print("Previous files deleted")
 
     # Get the GM IDs from main input excel file
-    newid = 1 # Assigns new IDs in ascending order to the selected ground motions
+    count = 0
     for id in GMIDs:
 
         # Copy Histories and rename/reindex
         srcfile = Path(allHistories, str(id) + ".txt")
-        dstfile = Path(dstHistories, str(newid) + ".txt")
+        dstfile = Path(dstHistories, str(newid[count]) + ".txt")
         with open(dstfile, 'w'): pass
         shutil.copy2(srcfile,dstfile)
 
         # Create lists for writing to GMInfo files
-        GMFileNames.append(str(newid) + ".txt")
-        GMTimeSteps.append(timesteps[id-1])
-        GMNumPoints.append(numpoints[id-1])
+        if lfrsType == "woodframe":
+            GMFileNames.append(str(newid[count]))
+        else:
+            GMFileNames.append(str(newid[count]) + ".txt")
 
-        newid += 1
+        GMTimeSteps.append(timesteps[count])
+        GMNumPoints.append(numpoints[count])
+
+        count += 1
 
     # Write to GMInfo files
-    with open(Path(dstInfo, "GMNumPoints.txt"),'w') as f, open(Path(dstInfo, "GMTimeSteps.txt"),'w') as g, open(Path(dstInfo, "GMFileNames.txt"),'w') as h:
+    with open(Path(dstInfo, fileNames[0]),'w') as f, open(Path(dstInfo, fileNames[1]),'w') as g, open(Path(dstInfo, fileNames[2]),'w') as h:
         f.write("\n".join(GMNumPoints))
         g.write("\n".join(GMTimeSteps))
         h.write("\n".join(GMFileNames))
@@ -418,7 +384,11 @@ def getOutputs(lfrsType,id):
         fileSources = [outDataSource,elasticModelSource,nonlinModelSource]
 
     elif lfrsType == 'woodframe':
-        pass
+        outDataSource = Path("Results")
+        nonlinModelSource = Path("BuildingModels",buildingFolder)
+
+        fileSources = [outDataSource,nonlinModelSource]
+
     elif lfrsType == 'rcwall':
         outDataSource = os.getcwd()
         nonlinModelSource = Path('Nonlinear analysis')

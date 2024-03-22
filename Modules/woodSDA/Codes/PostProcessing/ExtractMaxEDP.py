@@ -31,6 +31,7 @@ from scipy.stats import uniform
 from scipy.optimize import minimize
 
 import matplotlib.pyplot as plt
+from pathlib import Path
 
 
 # In[3]:
@@ -184,8 +185,9 @@ def ExtractPGA (GMDirectory, HazardLevel, NumGM):
     for i in range(NumHazardLevel):
         # Define ground motion information stored directory, the information of ground motion of each hazard level shouled be stored in 
         # seperate folder. 
-        GMInfoDirectory = GMDirectory + '/%d'%(i+1) + '/GroundMotionInfo'
-        GMHistoryDirectory =  GMDirectory + '/histories'
+        # GMInfoDirectory = GMDirectory + '\%d'%(i+1) + '\GroundMotionInfo'
+        GMInfoDirectory = Path(GMDirectory,str(i+1),'GroundMotionInfo')
+        GMHistoryDirectory = Path(GMDirectory,str(i+1), 'histories')
 
         os.chdir (GMInfoDirectory)
         ScalingFactor = np.loadtxt(r'BiDirectionMCEScaleFactors.txt')
@@ -193,14 +195,15 @@ def ExtractPGA (GMDirectory, HazardLevel, NumGM):
 
         # We have 2 perpendicular directions, also consider the responses in each direction respectively
         for j in range(NumGM[i]):
-        	
-        	os.chdir(GMHistoryDirectory)
-        	XPGA = max(np.abs(np.loadtxt('%s.txt'%GMName[2*j], dtype = float)))*ScalingFactor[j]
-        	ZPGA = max(np.abs(np.loadtxt('%s.txt'%GMName[2*j+1], dtype = float)))*ScalingFactor[j]
-        	PGA.loc[j+NumGM_temp2[i],0] = XPGA
-        	PGA.loc[j+NumGM_temp2[i]+NumGM[i],0] = ZPGA
-        	PGA.loc[j+NumGM[i]+NumGM_temp2[i],0] = ZPGA
-        	PGA.loc[j+NumGM[i]+NumGM_temp2[i]+NumGM[i],0] = XPGA
+            
+            os.chdir(GMHistoryDirectory)
+            XPGA = max(np.abs(np.loadtxt('%s.txt'%GMName[2*j], dtype = float)))*ScalingFactor[j]
+            # ZPGA = XPGA
+            ZPGA = max(np.abs(np.loadtxt('%s.txt'%GMName[2*j+1], dtype = float)))*ScalingFactor[j]
+            PGA.loc[j+NumGM_temp2[i],0] = XPGA
+            PGA.loc[j+NumGM_temp2[i]+NumGM[i],0] = ZPGA
+            PGA.loc[j+NumGM[i]+NumGM_temp2[i],0] = ZPGA
+            PGA.loc[j+NumGM[i]+NumGM_temp2[i]+NumGM[i],0] = XPGA
     return PGA
 
     

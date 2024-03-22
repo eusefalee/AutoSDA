@@ -32,8 +32,9 @@ from model_generation import model_generation
 ##########################################################################
 
 IDs = [1]
-for id in IDs:
-    if id not in [150, 151, 186, 187, 188, 189, 190]:
+
+def maingeneration(IDs):
+    for id in IDs:
         building_id = 'Building_' + str(id)
         print(building_id)
         model_generation(building_id, base_directory)
@@ -67,3 +68,9 @@ for id in IDs:
 #     print('Current model is: ', building_id)
 #     # Run OpenSees.exe file
 #     os.system('OpenSees Model.tcl')
+        
+if __name__ == "__main__":
+    import sys
+    id = int(sys.argv[1])
+    print("Id is ",id)
+    maingeneration([id])
